@@ -1,0 +1,28 @@
+.header{
+    background-image: url("../img/Background.png");
+}
+
+.banner{
+    padding: 200px 0;
+}
+
+.weare{
+    padding: 100px 0;
+}
+
+.successstories{
+    padding: 100px 0;
+}
+
+.successstories .col-md-4{
+    padding: 5px !important;
+}
+
+.getintouch{
+    padding-bottom: 100px;
+}
+
+.btn-warning{
+    background-color: #fa694e !important;
+    color: white !important;
+}

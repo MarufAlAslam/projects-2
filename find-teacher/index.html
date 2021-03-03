@@ -1,0 +1,954 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous">
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- google font css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet">
+
+    <!-- slick css -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <!-- select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" /> 
+
+    <!-- mark you time css -->
+    <link rel="stylesheet" href="pick-hours-availability-calendar/css/mark-your-calendar.css">
+
+    <!-- vgnav -->
+    <link href="vgnav/vgnav.css"
+      rel="stylesheet" type="text/css">
+    <link href="vgnav/vgnav-theme.css"
+      rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
+    <link href="https://vegas-dev.github.io/vegas-nav/demo/css/demo.css"
+      rel="stylesheet" type="text/css">
+
+    <!-- lity css -->
+    <link rel="stylesheet" href="lity/lity.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- pick time css -->
+    <link rel="stylesheet" href="style/pick.css">
+
+    <!-- favicon -->
+    <!-- <link rel="shortcut icon" href="img/logo.png"> -->
+    <title>put the title here</title>
+  </head>
+
+  <body>
+
+    <!-- =========================navbar================================ -->
+    <section class="navBarSection border-bottom">
+      <div class="header bg-white">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-2">
+              <div class="logo text-left">
+                <a href="index.html" class="text-primary text-decoration-none
+                  logo">
+                  LOGO
+                </a>
+              </div>
+            </div>
+            <div class="col-10 text-right m-auto">
+              <div class="navigation">
+                <nav class="vg-nav">
+                  <ul class="vg-nav-main-container ml-auto">
+                    <a href="" class="text-primary text-decoration-none font-weight-bold find">Find a Teacher</a>
+                    <li class="dropdown text-left">
+                      <a href="" class="text-primary">Site Language</a>
+                      <ul class="left">
+                        <li><a href="" class="text-primary">Language 1</a></li>
+                        <li><a href="" class="text-primary">Language 2</a></li>
+                        <li><a href="" class="text-primary">Language 3</a></li>
+                        <li><a href="" class="text-primary">Language 4</a></li>
+                        <li><a href="" class="text-primary">Language 5</a></li>
+                        <li><a href="" class="text-primary">Language 6</a></li>
+                        <li><a href="" class="text-primary">Language 7</a></li>
+                      </ul>
+                    </li>
+                      <li>
+                        <a href="login.html" class="text-primary text-uppercase" data-lity>Login</a>
+                      </li>
+
+                      <li>
+                        <a href="signup.html" class="text-white text-uppercase btn btn-primary bg-primary" data-lity="">Sign Up</a>
+                      </li>
+                    
+                    </ul>
+                  </nav>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================navbar================================ -->
+      
+      <div class="filter-btn bg-white">
+        <button class="btn btn-outline-dark bg-white text-dark rounded-pill px-4" id="mobFilterBtn">Filter</button>
+      </div>
+      <!-- ================================shortcut section==================================== -->
+      <section class="filter">
+        <div class="container-fluid">
+          
+          <div class="dropdown1 d-inline">
+           
+            <select id='lang' class="btn btn-outline-primary bg-white text-primary px-4 rounded-pill mr-3">
+              <option value='0'>Language</option> 
+              <option value='1'>English</option> 
+              <option value='2'>French</option> 
+              <option value='3'>German</option> 
+              <option value='4'>Italian</option> 
+              <option value='5'>Japanese</option> 
+              <option value='6'>Mandarin</option> 
+              <option value='7'>Russian</option> 
+              <option value='7'>Spanish</option> 
+              <option value='0'>Bengali</option> 
+              <option value='1'>Hindi</option>    
+            </select>
+            <!-- <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div> -->
+          </div> 
+          <div class="dropdown2 d-inline">
+            <button type="button" id="availBtn" class="availbtn btn btn-outline-dark bg-white px-4 rounded-pill mr-3" data-toggle="dropdown">
+              Availability
+            </button>
+            <div class="availability p-2">
+              <div class="container-fluid">
+                <h5>Time of Day</h5>
+              <div class="row my-3">
+                <div class="col-3">
+                  <div class="text-center">
+                    <button class="btn btn-block" id="early">
+                      <h6>Early Morning</h6>
+                    <p>4am to 8am</p>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-block" id="morning">
+                    <h6>Morning</h6>
+                  <p>9am to 11am</p>
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-block" id="afternoon">
+                    <h6>Afternoon</h6>
+                  <p>12pm to 6pm</p>
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-block" id="evening">
+                    <h6>Evening</h6>
+                  <p>7pm to 3am</p>
+                  </button>
+                </div>
+              </div>
+              <h5>Availability</h5>
+              <div class="row border">
+                <div class="col p-0">
+                  <button class="btn">Sat</button>
+                </div>
+                <div class="col p-0">
+                  <button class="btn">Sun</button>
+                </div>
+                <div class="col p-0">
+                  <button class="btn">Mon</button>
+                </div>
+                <div class="col p-0">
+                  <button class="btn">Tue</button>
+                </div>
+                <div class="col p-0">
+                  <button class="btn">Wed</button>
+                </div>
+                <div class="col p-0">
+                  <button class="btn">Thu</button>
+                </div>
+                <div class="col p-0">
+                  <button class="btn">Fri</button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown3 d-inline">
+            <select id='fromCountry' class="btn btn-outline-primary bg-white text-primary px-4 rounded-pill mr-3">
+              <option value='0'>From</option> 
+              <option value='1'>Bangladesh</option> 
+              <option value='2'>India</option> 
+              <option value='3'>America</option> 
+              <option value='4'>Japan</option> 
+              <option value='5'>Morocco</option> 
+              <option value='6'>Bhutan</option> 
+              <option value='7'>Canada</option> 
+                
+            </select>
+          </div>
+          <div class="dropdown4 d-inline">
+            <select id='speaks' class="btn btn-outline-primary bg-white text-primary px-4 rounded-pill mr-3">
+              <option value='0'>Language</option> 
+              <option value='1'>English</option> 
+              <option value='2'>French</option> 
+              <option value='3'>German</option> 
+              <option value='4'>Italian</option> 
+              <option value='5'>Japanese</option> 
+              <option value='6'>Mandarin</option> 
+              <option value='7'>Russian</option> 
+              <option value='7'>Spanish</option> 
+              <option value='0'>Bengali</option> 
+              <option value='1'>Hindi</option>    
+            </select>
+          </div>
+          <div class="dropdown5 d-inline">
+            <button type="button" class="btn btn-outline-dark bg-white  px-4 rounded-pill mr-3 dropdown-toggle" data-toggle="dropdown">
+              Gender
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Male</a>
+              <a class="dropdown-item" href="#">Female</a>
+              <a class="dropdown-item" href="#">Other</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================================shortcut section==================================== -->
+
+
+      <!-- =====================================teachers======================================== -->
+      <section class="teachers">
+        <div class="container">
+          <h2>English Tutors and Teachers</h2>
+          <div class="row my-3">
+            <div class="col-md-8 teacherCard1">
+              <div class="card p-3">
+                <button class="btn btn-primary bg-primary w-25 border-0 rounded">Book a trial</button>
+                <div class="row">
+                  <div class="col-3">
+                    <img src="img/teacher.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-9">
+                    <a href="teacher-profile.html" class="text-dark text-decoration-none d-inline">
+                      <h4 class="d-inline">William Cross</h4>
+                    </a>
+                    <img src="img/verified.svg" style="width: 20px;position: relative;top: -4px;" alt="">
+                      <i class="fa fa-star text-warning ml-3"></i>
+                      <span class="rate">4.9</span>
+                    <div class="attributes mt-3">
+                      <button class="btn disabled btn-light text-left">
+                        <h6>Teaches</h6>
+                        <p>English</p>
+                      </button>
+                      <button class="btn disabled btn-light text-left mx-2">
+                        <h6>From</h6>
+                        <p>India</p>
+                      </button>
+                      <button class="btn disabled btn-light text-left">
+                        <h6>Lessons</h6>
+                        <p>111</p>
+                      </button>
+                    </div>
+                    <p class="mt-2">
+                      <span class="font-weight-bold">Speaks:</span>
+                      English <span class="text-primary">Native</span>
+                      ,Bosian <span class="text-success">C1</span>
+                      ,Bosian <span class="text-success">C1</span>
+                    </p>
+                    <p class="mt-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum odit eveniet cumque explicabo, temporibus ea hic, aut esse error modi, sed ducimus. Possimus ut beatae a voluptates tenetur. Rerum!
+                    </p>
+                    <button class="btn btn-link mt-2 p-0">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card sideCard1 p-2">
+                <iframe width="100%" height="210" src="https://www.youtube.com/embed/P3TwUfUqc78" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="text-center">All times listed are in your local timezone</p>
+                <div id="picker"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-3">
+            <div class="col-md-8 teacherCard2">
+              <div class="card p-3">
+                <button class="btn btn-primary bg-primary w-25 border-0 rounded">Book a trial</button>
+                <div class="row">
+                  <div class="col-3">
+                    <img src="img/teacher.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-9">
+                    <a href="teacher-profile.html" class="text-dark text-decoration-none d-inline">
+                      <h4 class="d-inline">William Cross</h4>
+                    </a>
+                    <img src="img/verified.svg" style="width: 20px;position: relative;top: -4px;" alt="">
+                      <i class="fa fa-star text-warning ml-3"></i>
+                      <span class="rate">4.9</span>
+                    <div class="attributes mt-3">
+                      <button class="btn disabled btn-light text-left">
+                        <h6>Teaches</h6>
+                        <p>English</p>
+                      </button>
+                      <button class="btn disabled btn-light text-left mx-2">
+                        <h6>From</h6>
+                        <p>India</p>
+                      </button>
+                      <button class="btn disabled btn-light text-left">
+                        <h6>Lessons</h6>
+                        <p>111</p>
+                      </button>
+                    </div>
+                    <p class="mt-2">
+                      <span class="font-weight-bold">Speaks:</span>
+                      English <span class="text-primary">Native</span>
+                      ,Bosian <span class="text-success">C1</span>
+                      ,Bosian <span class="text-success">C1</span>
+                    </p>
+                    <p class="mt-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum odit eveniet cumque explicabo, temporibus ea hic, aut esse error modi, sed ducimus. Possimus ut beatae a voluptates tenetur. Rerum!
+                    </p>
+                    <button class="btn btn-link mt-2 p-0">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card sideCard2 p-2">
+                <iframe width="100%" height="210" src="https://www.youtube.com/embed/P3TwUfUqc78" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="text-center">All times listed are in your local timezone</p>
+                <div id="picker1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-3">
+            <div class="col-md-8 teacherCard3">
+              <div class="card p-3">
+                <button class="btn btn-primary bg-primary w-25 border-0 rounded">Book a trial</button>
+                <div class="row">
+                  <div class="col-3">
+                    <img src="img/teacher.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-9">
+                    <a href="teacher-profile.html" class="text-dark text-decoration-none d-inline">
+                      <h4 class="d-inline">William Cross</h4>
+                    </a>
+                    <img src="img/verified.svg" style="width: 20px;position: relative;top: -4px;" alt="">
+                      <i class="fa fa-star text-warning ml-3"></i>
+                      <span class="rate">4.9</span>
+                    <div class="attributes mt-3">
+                      <button class="btn disabled btn-light text-left">
+                        <h6>Teaches</h6>
+                        <p>English</p>
+                      </button>
+                      <button class="btn disabled btn-light text-left mx-2">
+                        <h6>From</h6>
+                        <p>India</p>
+                      </button>
+                      <button class="btn disabled btn-light text-left">
+                        <h6>Lessons</h6>
+                        <p>111</p>
+                      </button>
+                    </div>
+                    <p class="mt-2">
+                      <span class="font-weight-bold">Speaks:</span>
+                      English <span class="text-primary">Native</span>
+                      ,Bosian <span class="text-success">C1</span>
+                      ,Bosian <span class="text-success">C1</span>
+                    </p>
+                    <p class="mt-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum odit eveniet cumque explicabo, temporibus ea hic, aut esse error modi, sed ducimus. Possimus ut beatae a voluptates tenetur. Rerum!
+                    </p>
+                    <button class="btn btn-link mt-2 p-0">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card sideCard3 p-2">
+                <iframe width="100%" height="210" src="https://www.youtube.com/embed/P3TwUfUqc78" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="text-center">All times listed are in your local timezone</p>
+                <div id="picker2"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-3">
+            <div class="col-md-8 teacherCard4">
+              <div class="card p-3">
+                <button class="btn btn-primary bg-primary w-25 border-0 rounded">Book a trial</button>
+                <div class="row">
+                  <div class="col-3">
+                    <img src="img/teacher.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-9">
+                    <a href="teacher-profile.html" class="text-dark text-decoration-none d-inline">
+                      <h4 class="d-inline">William Cross</h4>
+                    </a>
+                    <img src="img/verified.svg" style="width: 20px;position: relative;top: -4px;" alt="">
+                      <i class="fa fa-star text-warning ml-3"></i>
+                      <span class="rate">4.9</span>
+                    <div class="attributes mt-3">
+                      <button class="btn disabled btn-light text-left">
+                        <h6>Teaches</h6>
+                        <p>English</p>
+                      </button>
+                      <button class="btn disabled btn-light text-left mx-2">
+                        <h6>From</h6>
+                        <p>India</p>
+                      </button>
+                      <button class="btn disabled btn-light text-left">
+                        <h6>Lessons</h6>
+                        <p>111</p>
+                      </button>
+                    </div>
+                    <p class="mt-2">
+                      <span class="font-weight-bold">Speaks:</span>
+                      English <span class="text-primary">Native</span>
+                      ,Bosian <span class="text-success">C1</span>
+                      ,Bosian <span class="text-success">C1</span>
+                    </p>
+                    <p class="mt-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum odit eveniet cumque explicabo, temporibus ea hic, aut esse error modi, sed ducimus. Possimus ut beatae a voluptates tenetur. Rerum!
+                    </p>
+                    <button class="btn btn-link mt-2 p-0">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card sideCard4 p-2">
+                <iframe width="100%" height="210" src="https://www.youtube.com/embed/P3TwUfUqc78" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="text-center">All times listed are in your local timezone</p>
+                <div id="picker3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =====================================teachers======================================== -->
+
+
+      <!-- ========================footer================================== -->
+      <section class="footer">
+        <div class="container">
+          <h5>Display Language</h5>
+              <div class="dropdown6 d-inline">
+                <button type="button" class="btn btn-outline-dark bg-transparent text-dark px-4 rounded-pill mr-3 dropdown-toggle" data-toggle="dropdown">
+                  English
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Language 1</a>
+                  <a class="dropdown-item" href="#">Language 2</a>
+                  <a class="dropdown-item" href="#">Language 3</a>
+                </div>
+              </div> 
+          <div class="row mt-4">
+            <div class="col-md-3">
+              <h5 class="mt-3">Verbling</h5>
+              <a href="" class="d-block my-2 text-dark">Apply to Teach</a>
+              <a href="" class="d-block my-2 text-dark">Mobile Apps</a>
+              <a href="" class="d-block my-2 text-dark">Explore Decks</a>
+              <a href="" class="d-block my-2 text-dark">Support</a>
+              <a href="" class="d-block my-2 text-dark">Partner With Us</a>
+            </div>
+            <div class="col-md-3">
+              <h5 class="mt-3">Teachers & Tutors</h5>
+              <a href="" class="d-block my-2 text-dark">English Tutor</a>
+              <a href="" class="d-block my-2 text-dark">Spanish Tutor</a>
+              <a href="" class="d-block my-2 text-dark">French Tutor</a>
+              <a href="" class="d-block my-2 text-dark">Japanese Tutor</a>
+              <a href="" class="d-block my-2 text-dark">Chinese  Tutor</a>
+            </div>
+            <div class="col-md-3">
+              <h5 class="mt-3">Languages</h5>
+              <a href="" class="d-block my-2 text-dark">English Language</a>
+              <a href="" class="d-block my-2 text-dark">Spanish Language</a>
+              <a href="" class="d-block my-2 text-dark">French Language</a>
+              <a href="" class="d-block my-2 text-dark">Japanese Language</a>
+              <a href="" class="d-block my-2 text-dark">Chinese  Language</a>
+            </div>
+            <div class="col-md-3">
+              <h5 class="mt-3">Social</h5>
+              <a href="" class="d-block text-decoration-none my-2 text-dark">
+                <i class="fab fa-facebook-f text-primary mr-3"></i>
+                Facebook
+              </a>
+              <a href="" class="d-block text-decoration-none my-2 text-dark">
+                <i class="fab fa-twitter text-primary mr-3"></i>
+                Twitter
+              </a>
+              <a href="" class="d-block text-decoration-none my-2 text-dark">
+                <i class="fab fa-instagram text-danger mr-3"></i>
+                Instagram
+              </a>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================footer================================== -->
+
+
+
+
+      <!-- javascripts -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="jquery/jquery.min.js"></script>
+      <script src="counterup/waypoints.min.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+      <!-- vgnav -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/css.min.js"></script>
+      <script
+        src="vgnav/vgnav.min.js"></script>
+
+      <!-- slick js -->
+      <script src="slick/slick.min.js"></script>
+
+      <!-- pick hour js -->
+      <script src="pick-hours-availability-calendar/js/mark-your-calendar.js"></script>
+
+      <!-- Select2 JS --> 
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+      <!-- counterup js -->
+
+      <script src="counterup/jquery.rcounter.js"></script>
+      <!-- lity js -->
+      <script src="lity/lity.js"></script>
+      <!-- custom js -->
+      <script src="custom js/script.js"></script>
+
+
+      <script type="text/javascript">
+        (function($) {
+          $('#picker').markyourcalendar({
+            availability: [
+              ['1:00', '2:00', '3:00', '4:00', '5:00'],
+              ['2:00'],
+              ['3:00'],
+              ['4:00'],
+              ['5:00'],
+              ['6:00'],
+              ['7:00']
+            ],
+            isMultiple: true,
+            onClick: function(ev, data) {
+              // data is a list of datetimes
+              console.log(data);
+              var html = ``;
+              $.each(data, function() {
+                var d = this.split(' ')[0];
+                var t = this.split(' ')[1];
+                html += `<p>` + d + ` ` + t + `</p>`;
+              });
+              $('#selected-dates').html(html);
+            },
+            onClickNavigator: function(ev, instance) {
+              var arr = [
+                [
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['1:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['3:30'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00']
+                ],
+                [
+                  ['2:00', '5:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['4:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00'],
+                  ['2:00', '5:00']
+                ],
+                [
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00']
+                ],
+                [
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00'],
+                  ['4:00', '5:00']
+                ],
+                [
+                  ['4:00', '6:00'],
+                  ['4:00', '6:00'],
+                  ['4:00', '6:00'],
+                  ['4:00', '6:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['4:00', '6:00'],
+                  ['4:00', '6:00']
+                ],
+                [
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['3:00', '6:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                  ['3:00', '6:00']
+                ],
+                [
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['3:00', '4:00'],
+                  ['4:00', '5:00', '6:00', '7:00', '8:00']
+                ]
+              ]
+              var rn = Math.floor(Math.random() * 10) % 5;
+              instance.setAvailability(arr[rn]);
+            }
+          });
+        })(jQuery);
+    </script>
+
+
+<script type="text/javascript">
+  (function($) {
+    $('#picker1').markyourcalendar({
+      availability: [
+        ['1:00', '2:00', '3:00', '4:00', '5:00'],
+        ['2:00'],
+        ['3:00'],
+        ['4:00'],
+        ['5:00'],
+        ['6:00'],
+        ['7:00']
+      ],
+      isMultiple: true,
+      onClick: function(ev, data) {
+        // data is a list of datetimes
+        console.log(data);
+        var html = ``;
+        $.each(data, function() {
+          var d = this.split(' ')[0];
+          var t = this.split(' ')[1];
+          html += `<p>` + d + ` ` + t + `</p>`;
+        });
+        $('#selected-dates').html(html);
+      },
+      onClickNavigator: function(ev, instance) {
+        var arr = [
+          [
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['1:00', '5:00'],
+            ['2:00', '5:00'],
+            ['3:30'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00']
+          ],
+          [
+            ['2:00', '5:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['4:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00']
+          ],
+          [
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00']
+          ],
+          [
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00']
+          ],
+          [
+            ['4:00', '6:00'],
+            ['4:00', '6:00'],
+            ['4:00', '6:00'],
+            ['4:00', '6:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['4:00', '6:00'],
+            ['4:00', '6:00']
+          ],
+          [
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['3:00', '6:00']
+          ],
+          [
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00']
+          ]
+        ]
+        var rn = Math.floor(Math.random() * 10) % 7;
+        instance.setAvailability(arr[rn]);
+      }
+    });
+  })(jQuery);
+</script>
+
+<script type="text/javascript">
+  (function($) {
+    $('#picker2').markyourcalendar({
+      availability: [
+        ['1:00', '2:00', '3:00', '4:00', '5:00'],
+        ['2:00'],
+        ['3:00'],
+        ['4:00'],
+        ['5:00'],
+        ['6:00'],
+        ['7:00']
+      ],
+      isMultiple: true,
+      onClick: function(ev, data) {
+        // data is a list of datetimes
+        console.log(data);
+        var html = ``;
+        $.each(data, function() {
+          var d = this.split(' ')[0];
+          var t = this.split(' ')[1];
+          html += `<p>` + d + ` ` + t + `</p>`;
+        });
+        $('#selected-dates').html(html);
+      },
+      onClickNavigator: function(ev, instance) {
+        var arr = [
+          [
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['1:00', '5:00'],
+            ['2:00', '5:00'],
+            ['3:30'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00']
+          ],
+          [
+            ['2:00', '5:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['4:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00']
+          ],
+          [
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00']
+          ],
+          [
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00']
+          ],
+          [
+            ['4:00', '6:00'],
+            ['4:00', '6:00'],
+            ['4:00', '6:00'],
+            ['4:00', '6:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['4:00', '6:00'],
+            ['4:00', '6:00']
+          ],
+          [
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['3:00', '6:00']
+          ],
+          [
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00']
+          ]
+        ]
+        var rn = Math.floor(Math.random() * 10) % 7;
+        instance.setAvailability(arr[rn]);
+      }
+    });
+  })(jQuery);
+</script>
+<script type="text/javascript">
+  (function($) {
+    $('#picker3').markyourcalendar({
+      availability: [
+        ['1:00', '2:00', '3:00', '4:00', '5:00'],
+        ['2:00'],
+        ['3:00'],
+        ['4:00'],
+        ['5:00'],
+        ['6:00'],
+        ['7:00']
+      ],
+      isMultiple: true,
+      onClick: function(ev, data) {
+        // data is a list of datetimes
+        console.log(data);
+        var html = ``;
+        $.each(data, function() {
+          var d = this.split(' ')[0];
+          var t = this.split(' ')[1];
+          html += `<p>` + d + ` ` + t + `</p>`;
+        });
+        $('#selected-dates').html(html);
+      },
+      onClickNavigator: function(ev, instance) {
+        var arr = [
+          [
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['1:00', '5:00'],
+            ['2:00', '5:00'],
+            ['3:30'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00']
+          ],
+          [
+            ['2:00', '5:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['4:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00'],
+            ['2:00', '5:00']
+          ],
+          [
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00']
+          ],
+          [
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00'],
+            ['4:00', '5:00']
+          ],
+          [
+            ['4:00', '6:00'],
+            ['4:00', '6:00'],
+            ['4:00', '6:00'],
+            ['4:00', '6:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['4:00', '6:00'],
+            ['4:00', '6:00']
+          ],
+          [
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['3:00', '6:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00'],
+            ['3:00', '6:00']
+          ],
+          [
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['3:00', '4:00'],
+            ['4:00', '5:00', '6:00', '7:00', '8:00']
+          ]
+        ]
+        var rn = Math.floor(Math.random() * 10) % 7;
+        instance.setAvailability(arr[rn]);
+      }
+    });
+  })(jQuery);
+</script>
+
+    </body>
+  </html>

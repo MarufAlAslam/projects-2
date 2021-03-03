@@ -1,0 +1,25 @@
+.newArrivalCard1{
+    margin: 10px 0 !important;
+}
+@media only screen and (max-width:1100px){
+    .newArrivalCard1 p {
+        font-size: 14px;
+    }
+    .newArrivalCard1 strike {
+        font-size: 14px;
+    }
+    .newArrivalCard1 button {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:1055px){
+    .newArrivalCard1 p {
+        font-size: 12px;
+    }
+    .newArrivalCard1 strike {
+        font-size: 12px;
+    }
+    .newArrivalCard1 button {
+        font-size: 12px;
+    }
+}

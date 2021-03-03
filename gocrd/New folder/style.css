@@ -1,0 +1,839 @@
+:root {
+    --white:white;
+    --navBack:#F5F5F5;
+    --banner1: #ed4e19e3;
+    --banner2:#d7aa22d8;
+    --second: #F7F7F7;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --boxShadow: rgba(0,0,0,0.15);
+    --li:#FFF9EC;
+    --liText:#FDDF6D;
+    --ash:rgba(255,255,255,0.7);
+    --footer:#FFCC4D;
+    --silver:#E3E3E3;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--white);
+    overflow: hidden !important;
+    /* border-radius: unset; */
+    padding-right: 0 !important;
+}
+html{
+    overflow-x: hidden !important;
+}
+/* .container{
+    max-width: 85% !important;
+} */
+
+/* =========================================navbar========================================== */
+.header{
+    background-color: var(--navBack);
+    border: 0;
+    padding: 20px 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    max-width: 100%;
+}
+.header .ml-50{
+    margin-left: 50px !important;
+}
+.vg-nav > ul > li {
+    padding: 0px 8px;
+}
+/* .header ul li{
+    margin: 0;
+    padding: 20px;
+}
+.header ul li a{
+    font-size: 14px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+.header ul li button{
+    font-size: 14px !important;
+    margin: 0 !important;
+    display: inline-block;
+    padding: 20px 20px !important;
+    border-radius:0 ;
+}
+.align-items-center {
+    padding-left: 40px;
+}
+.ml-85{
+    margin-left: 235px !important;
+    
+}
+.vg-nav .dropdown ul {
+    background: var(--white) !important;
+    box-shadow: 0 4px 7px var(--boxShadow);
+}
+.left li a:hover{
+    background-color: var(--li) !important;
+    color: var(--liText) !important;
+    transition: all 0.2s ease-in;
+    transform: scale(1.01);
+    border-radius: 5px;
+}
+.left ul li{
+    padding: 0 !important;
+}
+/* .left li:hover a{
+    color: #FDDF6D !important;
+} */
+.left li a:hover .dropdown.dropdown ul li a{
+    background-color: var(--white) !important;
+    color: var(--dark) !important;
+}
+.left ul li li:hover{
+    background-color: var(--li) !important;
+    color: var(--liText) !important;
+    transition: all 0.2s ease-in;
+    transform: scale(1.01);
+    border-radius: 5px;
+}
+.left ul li li:hover a{
+    color: var(--liText) !important;
+}
+.container{
+    max-width: 85% !important;
+    z-index: unset;
+}
+/* nav ul li a{
+    margin: auto 20px;
+    font-size: 12px;
+} */
+/* .dropdown-item{
+    margin: 0 !important;
+}
+.dropdown-menu{
+   position: relative;
+} */
+
+
+/* .dropdown-item:hover{
+    background-color: var(--li) !important;
+    color: var(--liText) !important;
+    transition: all 0.2s ease-in;
+    transform: scale(1.01);
+    border-radius: 5px;
+}
+.dropdown-item{
+    padding: 10px !important;
+    border: 0;
+} */
+
+/* =========================================navbar========================================== */
+
+
+/* ========================================hero========================================== */
+.hero{
+    padding: 250px 0 150px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/post3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero h1{
+    font-size: 96px;
+    font-weight: bolder;
+}
+.hero p{
+    font-size: 25px;
+}
+.hero button{
+    font-size: 19px;
+}
+/* ========================================hero========================================== */
+
+
+/* =======================================elementtwo======================================= */
+.elementtwo{
+    padding: 50px 0;
+}
+.elementtwo h2{
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #515B69 !important;
+}
+.elementtwo p.text-muted{
+    font-size: 28px;
+    color: #94919F !important;
+}
+.elementtwo p.text-justify{
+    color: #838F9C !important;
+    font-size: 22px;
+    margin-top: 40px;
+}
+/* ==========================================elementtwo===================================== */
+
+/* ==========================================elementthree======================================= */
+.elementthree{
+    padding: 100px 0;
+    background-color: #ECEDF1;
+}
+.elementthree h2{
+    font-size: 38px;
+    letter-spacing: 2px;
+    color: #515B69 !important;
+}
+.elementtwo p.text-muted{
+    font-size: 28px;
+    color: #94919F !important;
+}
+.elementthree .mt-76{
+    margin-top: 76px;
+}
+.elementthree i{
+    display: inline-block;
+}
+.elementthree .text-info{
+    color: #35BAF2 !important;
+}
+.elementthree .card{
+    background-color: transparent;
+}
+.elementthree h3{
+    color: #515B69 !important;
+    letter-spacing: 2px;
+}
+.elementthree .details{
+    color: #7e7f7f;
+    letter-spacing: 1px;
+}
+/* ==========================================elementthree======================================= */
+
+
+/* ===========================================elementfour========================================= */
+.elementfour .row .col-md-6{
+    padding: 100px 0;
+}
+.elementfour .bg-1{
+    background-color: #37507A;
+}
+.elementfour .bg-2{
+    background-color: #415B86;
+}
+.elementfour .bg-3{
+    background-color: #4B6590;
+}
+.elementfour .bg-4{
+    background-color: #56709C;
+}
+.bg-1, .bg-2, .bg-3, .bg-4 p{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.elementfour .col-md-6 h3{
+    font-size: 33px !important;
+}
+.elementfour .card{
+    background-color: transparent;
+    border: 0;
+}
+.elementfour .card-img-top{
+    transition: all 1s ease-in-out;
+}
+.elementfour .card-img-top:hover{
+transition: all 1s ease-in-out;
+transform: scale(1.2);
+}
+/* ===========================================elementfour========================================= */
+
+/* ========================================== element 5 ===========================================*/
+.elementfive{
+    padding: 200px 0 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.elementfive .col-md-8{
+    position: relative;
+}
+.elementfive h2{
+    font-size: 48px;
+}
+.elementfive p{
+    font-size: 17px;
+}
+.elementfive .play i{
+    /* position: absolute;
+    top: -120%;
+    left: 50%; */
+
+    /* transform: translate(-50%,-50%); */
+    margin-bottom: 30px;
+    border: 2px solid white;
+    transition: all 0.4s ease-in-out;
+    
+}
+.elementfive .mr-200{
+    margin-right: 250px !important;
+}
+.elementfive .play i:hover{
+color: #35baf2 !important;
+background-color: white;
+transition: all 0.4s ease-in-out;
+}
+#exampleModal{
+    overflow: hidden;
+    padding-right: 0!important;
+}
+/* ========================================== element 5 ===========================================*/
+
+
+/* ==============================modal=========================================== */
+.modal, .modal-content, .modal-header, .modal-body{
+    background-color: transparent;
+    border: unset;
+}
+/* ===============================modal============================================ */
+
+/* =========================================elementsix============================================== */
+.elementsix{
+    padding: 100px 0;
+}
+.elementsix h2{
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #515b69;
+}
+.elementsix p.text-muted{
+    font-size: 26px;
+}
+.elementsix p{
+    font-size: 20px;
+    color: #7f8795;
+}
+.elementsix .mt-150{
+    margin-top: 120px;
+}
+.elementsix .col-md-6 i{
+color: #35BAF2 !important;
+}
+.elementsix .col-md-4{
+    cursor: pointer;
+}
+.elementsix .col-md-4:hover i{
+    background-color: #35BAF2 !important;
+    color: white !important;
+    transition: all 0.5s ease-in-out;
+}
+.elementsix .text-primary {
+    color: #35baf2 !important;
+}
+/* =========================================elementsix============================================== */
+
+/* ==========================================elementseven=========================================== */
+.elementseven{
+    padding: 100px 0 0 0;
+    background-image: url(../img/seven.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.elementseven h2{
+    font-size: 48px;
+    color: #515b69;
+}
+.elementseven p{
+    font-size: 18px;
+    color: #7f8795;
+}
+/* ==========================================elementseven=========================================== */
+
+/* ==========================================elementeight============================================== */
+.elementeight{
+    padding: 100px 0 0 0;
+    background-color: #F1F2F6;
+}
+.elementeight h2{
+    font-size: 48px;
+    color: #515b69;
+}
+.elementeight p{
+    font-size: 18px;
+    color: #7f8795;
+    margin-top: 1.5rem;
+}
+/* ===========================================elementeight============================================= */
+
+/* ========================================elementten============================================== */
+.elementten{
+    padding: 100px 0;
+}
+.elementten h2{
+    font-size: 48px;
+    color: #515b69;
+}
+.elementten p{
+    font-size: 18px;
+    color: #7f8795;
+}
+.elementten .col-md-4 .subtitle{
+    font-size: 22px;
+    color: #7f8795;
+}
+.elementten img{
+    transition: all 1s ease-in-out;
+}
+.elementten img:hover{
+    transition: all 1s ease-in-out;
+    transform: scale(1.4);
+    }
+/* ========================================elementten============================================== */
+
+
+/* ==========================================elementtwelve============================================ */
+.elementtwelve{
+    padding: 100px 0 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/aaa\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.elementtwelve h2{
+    font-size: 48px;
+}
+.elementtwelve p{
+    font-size: 22px;
+}
+.elementtwelve .mt-5{
+    margin-top:80px !important;
+}
+/* ==========================================elementtwelve============================================ */
+
+
+/* =============================================elementthirteen=========================================== */
+.elementthirteen{
+    padding: 100px 0;
+}
+.elementthirteen .card{
+    border-radius: 50%;
+    padding: 40px 0;
+    background-image: linear-gradient(45deg,rgba(250, 170, 170, 0.8),rgba(160, 139, 255, 0.3)),url(../img/yellowbg.jpg);
+}
+.elementthirteen .font-30{
+    font-size: 30px;
+}
+.elementthirteen .btn{
+    background-color: #72849C !important;
+    border: unset;
+}
+.elementthirteen .btn:hover{
+    background-color: #35BAF2 !important;
+}
+/* ===============================================elementthirteen=========================================== */
+
+/* ==============================================elementfourteen=========================================== */
+.elementfourteen .img1{
+    margin: 0!important;
+    padding: 300px 0 0 0;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/123.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.elementfourteen .img2{
+    padding: 300px 0 0 0;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/1111.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elementfourteen .img3{
+    padding: 300px 0 0 0;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/aaa\ \(1\).jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elementfourteen .img4{
+    padding: 300px 0 0 0;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .elementfourteen button{
+    margin: 0 !important;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+} */
+/* .elementfourteen .img1:hover .btn1{
+    opacity: 1;
+    transition: all 1.5s ease-in-out;
+}
+.elementfourteen .img2:hover .btn2{
+    opacity: 1;
+    transition: all 1.5s ease-in-out;
+}
+.elementfourteen .img3:hover .btn3{
+    opacity: 1;
+    transition: all 1.5s ease-in-out;
+}
+.elementfourteen .img4:hover .btn4{
+    opacity: 1;
+    transition: all 1.5s ease-in-out;
+} */
+.elementfourteen .img1{
+    position: relative;
+}
+.elementfourteen .img1 a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.elementfourteen .img2{
+    position: relative;
+}
+.elementfourteen .img2 a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.elementfourteen .img3{
+    position: relative;
+}
+.elementfourteen .img3 a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.elementfourteen .img4{
+    position: relative;
+}
+.elementfourteen .img4 a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.fas.fa-angle-left.text-dark.fa-2x.mx-2 {
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+    right: 60px;
+}
+.fas.fa-angle-right.text-dark.fa-2x.mx-2 {
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+    right: 20px;
+}
+/* ==============================================elementfourteen=========================================== */
+
+/* ================================================contact us=============================================== */
+.contactus{
+    padding: 50px 0;
+}
+.contactus h2{
+    font-size: 48px;
+    color: #515b69;
+}
+.contactus input, textarea {
+    margin:5px 0;
+}
+.contactus p {
+    font-size: 18px;
+    color: #7f8795;
+    margin-bottom: 20px;
+}
+.contactus .col-1, .col-11{
+    padding-left: 0 !important;
+}
+/* ================================================contact us=============================================== */
+
+/* ==============================================footer====================================================== */
+.footer{
+    padding: 100px 0;
+    background-color: #092B45;
+}
+.footer .w-35{
+    width:35% !important
+}
+.footer p{
+    font-size: 18px;
+}
+.footer a{
+    text-decoration: none;
+}
+/* ==============================================footer====================================================== */
+
+/* ===============================================back to top=============================================== */
+#backtop{
+    position: fixed;
+    z-index: 1;
+    right: 15px;
+    bottom: 80px;
+    border-radius: 50% !important;
+    font-size: 25px;
+    transition: all 1s ease-in-out;
+    /* visibility: hidden; */
+    padding: 0 !important;
+    border: 0 !important;
+    background-color: transparent;
+}
+#backtop i:hover{
+background-color: #35BAF2 !important;
+transition: all 1s ease-in-out;
+}
+
+
+
+@media screen and (max-width:992px){
+    .header .w-75{
+        width:90% !important;
+    }
+    .elementtwo h2 {
+        font-size: 36px;
+        letter-spacing: 2px;
+        color: #515B69 !important;
+    }
+    .elementtwo p.text-muted {
+        font-size: 21px;
+        color: #94919F !important;
+    }
+    .elementtwo p.text-justify {
+        color: #838F9C !important;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+
+
+
+    .elementthree h3 {
+        color: #515B69 !important;
+        letter-spacing: 2px;
+        font-size: 26px;
+    }
+    .elementthree .details {
+        color: #7e7f7f;
+        letter-spacing: 1px;
+        font-size: 15px !important;
+    }
+
+
+    .elementfour .col-md-6 h3 {
+        font-size: 26px !important;
+    }
+    .elementfour p.text-white {
+        font-size: 16px;
+    }
+
+
+    .elementsix h2 {
+        font-size: 36px;
+        letter-spacing: 1px;
+        color: #515b69;
+    }
+    .elementsix p.text-muted {
+        font-size: 21px;
+    }
+    .elementsix p {
+        font-size: 16px;
+        color: #7f8795;
+    }
+    .elementsix p {
+        font-size: 14px;
+        color: #7f8795;
+        margin-left: 16px;
+    }
+
+
+    .elementseven h2 {
+        font-size: 36px;
+        color: #515b69;
+    }
+    .elementseven p {
+        font-size: 16px;
+        color: #7f8795;
+    }
+
+
+    .elementeight h2 {
+        font-size: 36px;
+        color: #515b69;
+    }
+    .elementeight p {
+        font-size: 16px;
+        color: #7f8795;
+        margin-top: 1.5rem;
+    }
+
+
+    .elementten h2 {
+        font-size: 36px;
+        color: #515b69;
+    }
+    .elementten p {
+        font-size: 16px;
+        color: #7f8795;
+    }
+    .elementten .col-md-4 .subtitle {
+        font-size: 18px;
+        color: #7f8795;
+    }
+
+
+    .elementthirteen .font-30 {
+        font-size: 23px;
+    }
+
+
+    .footer p {
+        font-size: 14px;
+    }
+    .footer .h5, h5 {
+        font-size: 1rem;
+    }
+    .footer .row .col-md:nth-child(1){
+        display: none;
+    }
+    .footer .row .col-md:nth-child(2){
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .header .img-fluid {
+        max-width: 130%;
+        height: auto;
+    }
+
+
+    .header .w-75{
+        width:140% !important;
+    }
+    .col-md-4.my-3.aos-init.aos-animate {
+        padding-left: 0 !important;
+    }
+    .elementfive .mr-200 {
+        margin-right: 200px !important;
+    }
+    .contactus .row{
+        margin: auto;
+    }
+    .hero h1 {
+        font-size: 80px;
+        font-weight: bold !important;
+    }
+    .hero p {
+        font-size: 20px;
+    }
+    .hero button {
+        font-size: 16px;
+    }
+
+
+    .elementfive h2 {
+        font-size: 36px;
+    }
+    .elementfive p {
+        font-size: 15px;
+    }
+    .col-md-6 {
+        text-align: center;
+    }
+
+
+    .col-md-4.my-3.aos-init.aos-animate {
+        padding-left: 110px;
+    }
+
+
+    .elementtwelve h2 {
+        font-size: 36px;
+    }
+    .elementtwelve p {
+        font-size: 16px;
+    }
+    
+
+    .card {
+        margin-top: 35px !important;
+        margin: 0px 88px;
+    }
+
+    .footer{
+        text-align: center !important;
+    }
+    .footer p,h5,.col-md,.text-left,.col-md-6{
+        text-align: center !important;
+    }
+    .footer h5{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .header .w-75{
+        width:300% !important;
+    }
+    .elementthirteen .card{
+        margin: 15px 0 !important;
+    }
+    .elementfour .card{
+        margin: 15px 0 !important;
+    }
+    .elementfive .mr-200 {
+        margin-right: 120px !important;
+    }
+}
+
+@media screen and (max-width:400px){
+    .header .w-75{
+        width:400% !important;
+    }
+    .hero h1 {
+        font-size: 50px;
+        font-weight: bold !important;
+    }
+    .elementfive .mr-200 {
+        margin-right: 90px !important;
+    }
+}
+
+@media screen and (max-width:300px){
+    .header .w-75{
+        width:999% !important;
+    }
+}

@@ -1,0 +1,21 @@
+.hidicon{
+    display: none;
+}
+@media only screen and (max-width:992px){
+    .usefull .col-lg-4{
+       margin: 10px 0;
+    }
+    
+    .usefull .row{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+    .willhide{
+        display: none;
+    }
+    .hidicon{
+        display: block;
+    }
+}

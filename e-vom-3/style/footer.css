@@ -1,0 +1,18 @@
+
+/* ==========================footer========================== */
+.footer{
+    background-color: #424242;
+    padding: 50px 0;
+}
+/* ======================footer================================ */
+
+/* ========================copyright============== */
+.copyright{
+    padding: 5px 0;
+    background-color: #e2a82f;
+}
+.copyright p{
+    font-size: 12px;
+    color: white !important;
+}
+/* ==========================copyright=============== */

@@ -1,0 +1,151 @@
+
+/* ==================================contents==================================== */
+.myslides{
+    padding: 50px 0;
+    background-color: #0e9b75;
+    position: relative;
+}
+.myslides h1{
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.myslides h1 span{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.myslides .col-md{
+    width: 50%;
+    float: left;
+}
+.btn-warning{
+    background-color: #f0a83c;
+    border-radius: unset;
+    padding: 8px 16px;
+}
+.btn-warning:hover{
+    background-color: #f0a83c;
+    border-radius: unset;
+    padding: 8px 16px;
+}
+.slick-dots {
+	position: absolute;
+	bottom: unset;
+	display: flex;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	flex-direction: column;
+	left: 95% !important;
+	top: 45%;
+}
+.slick-dots li button::before {
+	font-family: 'slick';
+	font-size: 6px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20;
+	height: 20px;
+	content: '•';
+	text-align: center;
+	opacity: 1;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li button::before {
+	font-family: 'slick';
+	font-size: 11px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20;
+	height: 20px;
+	content: '•';
+	text-align: center;
+	opacity: 1;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button::before {
+	opacity: 1;
+	color: orange;
+}
+
+
+
+
+
+/* =====================================aboutUs=========================================== */
+.aboutUs{
+    padding: 50px 0;
+}
+h2{
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.w-75.card-img-top.aboutImg {
+    box-shadow: 20px 20px 0px #f0a83c;
+}
+/* =====================================aboutUs=========================================== */
+
+
+
+/* =================================services========================================== */
+.services{
+    padding: 50px 0;
+}
+/* =================================services========================================== */
+
+
+/* ===========================contact========================= */
+.contact{
+    padding: 50px 0;
+}
+.text-warning{
+    color: #f0a83c !important;
+}
+.line{
+    height: 2px;
+    width: 50px;
+    margin: 0px;
+    padding: 0;
+    background-color: black;
+    display: inline-block;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.font-25{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::placeholder {
+    color: #f0a83c !important;
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #f0a83c !important;
+   font-size: 14px;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #f0a83c !important;
+   font-size: 14px;
+  }
+  .contact .btn.btn-warning.px-5.text-white.mt-4 {
+    padding: 5px 75px !important;
+}

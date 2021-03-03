@@ -1,0 +1,493 @@
+:root {
+    --white:white;
+    --navBack:#F5F5F5;
+    --banner1: #ed4e19e3;
+    --banner2:#d7aa22d8;
+    --second: #F7F7F7;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --boxShadow: rgba(0,0,0,0.15);
+    --li:#FFF9EC;
+    --liText:#FDDF6D;
+    --ash:rgba(255,255,255,0.7);
+    --footer:#FFCC4D;
+    --silver:#E3E3E3;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--white);
+    overflow-x: hidden !important;
+    /* border-radius: unset; */
+    padding-right: 0 !important;
+}
+html{
+    overflow-x: hidden !important;
+}
+.text-primary{
+    color: #526ed0 !important;
+}
+/* .container{
+    max-width: 85% !important;
+} */
+
+/* =========================================navbar========================================== */
+.header{
+    /* background-color: transparent !important; */
+    background-image: url(../img/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    padding: 20px 0;
+    overflow: hidden;
+    z-index: 1;
+    max-width: 100%;
+    position: fixed !important;
+    clear: both;
+    display: flex;
+}
+.header .w-50{
+    width: 65px !important;
+    height: 65px !important;
+}
+.header .ml-50{
+    margin-left: 180px;
+}
+
+.vg-nav > ul > li {
+    padding: 0px 8px;
+}
+/* .vg-nav > ul > li.active a, .vg-nav > ul > li a:hover {
+    color: #fc5c7d !important;
+} */
+.vg-nav > ul > li > a {
+    font-size: 14px;
+    line-height: 1.2;
+    display: block;
+    color: #232323;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 10px;
+}
+.header ul li button{
+    font-size: 14px !important;
+    margin: 5px 0 !important;
+    display: inline-block;
+    padding: 20px 20px !important;
+    border-radius:0 ;
+    font-size: 1px !important;
+}
+.header ul li a.btn-outline-dark{
+    border: unset !important;
+}
+.align-items-center {
+    padding-left: 40px;
+}
+.ml-85{
+    margin-left: 235px !important;
+    
+}
+.vg-nav .dropdown ul {
+    background: var(--white) !important;
+    box-shadow: 0 4px 7px var(--boxShadow);
+}
+.left li a:hover{
+    background-color: var(--li) !important;
+    color: var(--liText) !important;
+    transition: all 0.2s ease-in;
+    transform: scale(1.01);
+    border-radius: 5px;
+}
+.left ul li{
+    padding: 0 !important;
+}
+
+.left li a:hover .dropdown.dropdown ul li a{
+    background-color: var(--white) !important;
+    color: var(--dark) !important;
+}
+.left ul li li:hover{
+    background-color: var(--li) !important;
+    color: var(--liText) !important;
+    transition: all 0.2s ease-in;
+    transform: scale(1.01);
+    border-radius: 5px;
+}
+.left ul li li:hover a{
+    color: var(--liText) !important;
+}
+.container{
+    max-width: 85% !important;
+    z-index: unset;
+}
+.vg-nav-hamburger span{
+    background-color: black !important;
+}
+
+
+/* =========================================navbar========================================== */
+
+
+
+
+
+
+/* =======================================banner================================================ */
+.banner{
+    padding: 200px 0 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/officeweb.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner h1{
+    font-family:Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 900px;
+}
+/* =======================================banner================================================ */
+
+/* ========================================desctiption=========================================== */
+.desc{
+    padding: 150px 0;
+}
+.text-primary{
+    color: #0C5DBF !important;
+}
+.line{
+    width: 250px;
+    height: 5px;
+    background-color:#0C5DBF !important;
+}
+.desc p{
+    font-weight: 600;
+    text-align: justify;
+}
+/* ==============================================description========================================= */
+
+
+/* ====================================================quienes=============================================== */
+.quienes{
+    padding: 150px 0;    
+    background-color: #F5F6F7;
+}
+.quienes .col-md-6 .col-md-6, .col-md-12{
+    padding: 3px;
+}
+.quienes .fa.fa-angle-right.text-primary {
+    font-size: 25px;
+}
+/* ====================================================quienes=============================================== */
+
+/* ==================================arion================================================ */
+.arion{
+    padding-top: 150px;
+}
+.arion .text-bc2{
+    color: #027BC2;
+}
+.arion .card{
+    border: unset;
+}
+/* ==================================arion================================================ */
+
+
+/* ========================================servicios============================================ */
+.servicios{
+    padding: 150px 0;
+}
+
+.servicios .one{
+    background-image: linear-gradient(#2661aa9c,#2661aa9c),url(../img/business-brainstorming-graph-chart-report-data-con-PQVT254-scaled-ox0arua38dmh85lsrxgyhbi2guzqxuuxiqisr1jm1k.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 300px 0 20px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.servicios .two{
+    background-image: linear-gradient(#2661aa9c,#2661aa9c),url(../img/skyscraper-building-construction-blueprints-backgr-7HDZ7WH-scaled-owv4s1wg86fouwz2thirs5ugmmtzmn6pqhhh1hjjqw.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 271px 0 20px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.servicios .three{
+    background-image: linear-gradient(#2661aa9c,#2661aa9c),url(../img/architect-engineer-blueprint-design-working-concep-P74LW2V-scaled-owv4ups4gp9iw1r6feg33grxy288zmkzj2mfmraqt0.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 271px 0 20px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.servicios .four{
+    background-image: linear-gradient(#2661aa9c,#2661aa9c),url(../img/business-workplace-with-digital-tablet-YM7RR9A-scaled.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 271px 0 20px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.servicios .five{
+    background-image: linear-gradient(#2661aa9c,#2661aa9c),url(../img/CELOK-1_2.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 242px 0 20px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .servicios .bottom-0{
+    position: absolute;
+    bottom: 0;left: 50%;
+    transform:translate(-50%);
+    font-size: 15px;
+    
+} */
+.base{
+    position: relative;
+    
+}
+.shade{
+    position: absolute;
+    top: 0;
+    width: 92%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: #11396A;
+    color: white;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.shade:hover{
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+}
+.servicios .shade:hover h4.hidh{
+    opacity: 0 !important;
+}
+
+.shade .contents{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+.shade .contents p{
+    font-size: 14px;
+    margin: 16px 10px;
+}
+.shade .contents .btn-outline-light{
+    background-color: transparent;
+    border-radius: unset;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.shade .contents .btn-outline-light:hover{
+    border:1px solid #61C8E7;
+}
+/* ========================================servicios============================================ */
+
+
+/* ============================================portfolio======================================= */
+.portfolio{
+    padding: 150px 0;
+    background-color: #F7F7F7;
+}
+.portfolio a.btn{
+    border-radius: unset;
+    background-color: #00569B !important;
+}
+/* ============================================portfolio======================================= */
+
+/* =============================================experience================================== */
+.experience{
+    padding: 150px 0;
+}
+.clip{
+    background-image: url(../img/two-unrecognizable-business-man-shake-hand-agreeme-63J9V7E-scaled.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    clip-path: polygon(49% 0, 100% 0, 100% 100%, 0% 100%);
+}
+/* =============================================experience================================== */
+
+
+/* =============================================counterupSection============================ */
+.counterupSection{
+    padding: 150px 0;
+}
+.counterupSection .bg-primary{
+background-color: #002F5E !important;
+padding: 20px;
+}
+.counterupSection .bg-primary span{
+    font-size: 35px;
+}
+.counterupSection .pb-45{
+    padding-bottom: 45px;
+}
+/* =============================================counterupSection============================ */
+
+/* =============================================Directivo=================================== */
+.Directivo{
+    padding: 20px 0;
+}
+.Directivo .card{
+    border: unset;
+}
+/* =============================================Directivo=================================== */
+
+
+/* ============================================bigfooter======================================= */
+.bigfooter{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/officeweb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+.bigfooter .line.line1{
+    width: 450px !important;
+    height: 3px !important;
+}
+.bigfooter .line.line2{
+    width: 150px !important;
+    height: 3px !important;
+}
+/* ============================================bigfooter======================================= */
+
+/* ===============================================footer========================================== */
+.footer{
+    background-color:#003F67;
+    border: none;
+}
+.footer a,p{
+    font-size: 17px;
+}
+.footer a:hover{
+    color: #00B7F1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================================================ */
+.portfolioSection{
+    padding:150px 0;
+    background-color: #F5F6F7;
+}
+
+.Secciones{
+    padding:50px 0;
+    background-color: #F5F6F7;
+    margin-top: 50px;
+}
+.Secciones .card{
+    border: none;
+    background-color: transparent;
+}
+
+.Flujo{
+    padding: 50px 0;
+}
+
+
+
+
+/* terms */
+.terms p{
+    font-size: 14px;
+    color: gray !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inmobil{
+    padding: 150px 0;
+    background-color: #F5F6F7;
+}
+.inmobil .card{
+    border: unset;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.supervision{
+    padding: 150px 0;
+    background-color: #F5F6F7;
+}
+
+
+
+
+
+
+
+
+
+
+

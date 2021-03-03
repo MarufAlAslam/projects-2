@@ -1,0 +1,53 @@
+.topBar{
+    background-color: #073b4c;
+    padding: 8px 0;
+}
+.header .logo {
+    position: relative;
+    z-index: 2;
+    padding: 8px 0;
+    text-align: left;
+}
+.vg-nav .dropdown ul {
+    background: var(--white) !important;
+    box-shadow: 0 4px 7px var(--boxShadow);
+}
+.vg-nav > ul > li.active a, .vg-nav > ul > li a:hover {
+    color: orange;
+}
+
+
+
+
+.container{
+    max-width: 85% !important;
+}
+.mobbtn{
+display: none !important;
+}
+
+.dropdown-item{
+    margin: 0 !important;
+}
+.dropdown-menu{
+   position: relative;
+}
+
+
+.dropdown-item{
+    padding: 10px !important;
+    border: 0;
+}
+
+.vg-nav > ul > li {
+    padding: 10px;
+}
+.vg-nav .dropdown ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 15px;
+    color: #232323;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: left;
+}

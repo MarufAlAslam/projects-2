@@ -1,0 +1,142 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+.banner{
+    position: relative;
+}
+.font-weight-bold {
+    font-weight: bold !important;
+}
+.banner .col-md-4.bg-white.py-5 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    padding: 0;
+}
+.text-danger{
+    color: #e6242f !important;
+}
+.bg-danger{
+    background-color: #e6242f !important;
+}
+.font-14{
+    font-size: 14px;
+}
+
+
+
+/* ====================================main-content======================================= */
+.main-content{
+    padding: 50px 0;
+}
+
+
+
+
+/* =====================================second================================================ */
+.second{
+    padding: 50px 0;
+}
+.second h1{
+    font-size: 65px;
+}
+.second .base{
+    position: relative;
+}
+.second .shade{
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* ============================================image-show============================================== */
+.image-show{
+    padding: 30px 0;
+}
+.image-show .base{
+    position: relative;
+}
+.image-show .shade{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-weight: bold !important;
+}
+.image-show .shade h1 {
+    font-weight: bold;
+}
+.image-show h1 {
+    font-size: 60px;
+    color: #0e0d0d !important;
+}
+.image-show h1.text-danger {
+    color: #e6242f !important;
+    font-weight: bold;
+}
+
+
+/* ======================================================slides-show=========================================== */
+.slides-show{
+    padding: 30px 0;
+}
+
+
+
+/* ===================================================footer====================================================== */
+.footer{
+    background-color: #a09f9f;
+    padding: 50px 0;
+}
+.footer h1{
+    font-size: 65px;
+}
+
+
+
+
+/* =================================media query======================================================= */
+@media screen and (max-width:768px){
+    .banner .col-md-4.bg-white.py-5 {
+        position: unset;
+        top: unset;
+        left: 5%;
+        transform: unset;
+        padding: 0;
+    }
+    .main-content {
+        padding-top: 0 !important;
+    }
+    .main-content p {
+        margin: 15px 0;
+    }
+    .main-content .row.mt-5 {
+        margin-top: 15px !important;
+    }
+    .second {
+        padding-top: 0 !important;
+    }
+    .second h1 {
+        font-size: 45px;
+    }
+    .second .shade {
+        position: unset;
+        bottom: 0;
+        margin: 15px 0;
+    }
+    .image-show {
+        padding-top: 0 !important;
+    }
+    .image-show .container {
+        width: 95% !important;
+    }
+    .slides-show {
+        padding-top: 0 !important;
+    }
+    .footer .col-md-5.p-2 {
+        margin: 15px 0;
+    }
+    .footer h1 {
+        font-size: 45px;
+    }
+}

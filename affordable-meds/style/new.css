@@ -1,0 +1,72 @@
+.cart-text {
+    font-size: 12px;
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    color: #69D4CF;
+}
+.cartTitle{
+    position: relative;
+}
+.medSlider{
+    padding-bottom: 120px;
+}
+.medSlider .slides{
+    background-color: #EFFBFB;
+    padding: 40px 0;
+    border-radius: 16px !important;
+}
+.customer-fav{
+    color: #1C9CB3;
+    font-weight: bold;
+}
+.medSlider .text-secondary{
+    color: #778C9A !important;
+}
+.medSlider h6{
+    color: #1C9CB3;
+}
+.TestimonialSlider {
+    box-shadow: 1px 3px 7px 0px gray;
+    border-radius: 16px !important;
+    z-index: 1;
+}
+.TestimonialSlider .img-fluid.prev.slick-arrow {
+    position: absolute;
+    z-index: 1010;
+    left: 18px;
+    top: 55%;
+    transform: translateY(-100%);
+    width: 40px;
+}
+.TestimonialSlider .img-fluid.next.slick-arrow {
+    position: absolute;
+    z-index: 1010;
+    right: 18px;
+    top: 55%;
+    transform: translateY(-100%);
+    width: 40px;
+}
+
+@media screen and (max-width:768px){
+    .medSlider {
+        padding-bottom: 120px;
+        font-size: 12px !important;
+    }
+    .TestimonialSlider .img-fluid.prev.slick-arrow {
+        position: absolute;
+        z-index: 1010;
+        left: 5px;
+        top: 55%;
+        transform: translateY(-100%);
+        width: 30px;
+    }
+    .TestimonialSlider .img-fluid.next.slick-arrow {
+        position: absolute;
+        z-index: 1010;
+        right: 5px;
+        top: 55%;
+        transform: translateY(-100%);
+        width: 30px;
+    }
+}

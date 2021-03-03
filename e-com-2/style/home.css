@@ -1,0 +1,103 @@
+@media only screen and (max-width:1250px){
+    .hero h1{
+        font-size: 50px !important;
+    }
+    .hero-title{
+        margin-top:25% !important;
+        margin-bottom:25% !important;
+    }
+    .rightLink {
+        position: absolute;
+        bottom: 45px !important;
+        right: 45px !important;
+    }
+    .price a {
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+    }
+}
+@media only screen and (max-width:1150px){
+    .hero h1{
+        font-size: 45px !important;
+    }
+    .hero-title{
+        margin-top:20% !important;
+        margin-bottom:25% !important;
+    }
+    .rightLink {
+        position: absolute;
+        bottom: 60px !important;
+        right: 50px !important;
+    }
+}
+@media only screen and (max-width:1050px){
+    .hero h1{
+        font-size: 40px !important;
+    }
+    .hero-title{
+        margin-top:20% !important;
+        margin-bottom:20% !important;
+    }
+    .rightLink {
+        position: absolute;
+        bottom: 90px !important;
+        right: 50px !important;
+    }
+    
+}
+@media only screen and (max-width:1000px){
+    .hero-title{
+        margin-top:13% !important;
+        margin-bottom:13% !important;
+    }
+    .font-md-11{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:992px){
+    .rightLink {
+        position: absolute;
+        bottom: 135px !important;
+        right: 50px !important;
+    }
+}
+@media only screen and (max-width:850px){
+    .hero-title{
+        margin-top:7% !important;
+        margin-bottom:7% !important;
+    }
+    .rightLink {
+        position: absolute;
+        bottom: 105px !important;
+        right: 50px !important;
+    }
+}
+@media only screen and (max-width:810px){
+    .font-md-11{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:768px){
+    .hero img{
+        width: 100% !important;
+    }
+    .hero-title{
+        text-align: center;
+        margin: 10% !important;
+    }
+    .rightLink{
+        position: absolute;
+        bottom: 30px !important;
+        right: 60px !important;
+    }
+    .font-md-11{
+        font-size: 14px;
+    }
+    .col-md.price-md {
+        top: -42px;
+        right: 20px;
+        font-size: 14px;
+        z-index: 1;
+    }
+}

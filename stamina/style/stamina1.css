@@ -1,0 +1,11 @@
+@media screen and (max-width:576px){
+    .selectSection button{
+        display: block;
+        margin: 5px auto;
+    }
+    .header .img-fluid {
+        max-width: 82px;
+        height: auto;
+        height: 29px;
+    }
+}

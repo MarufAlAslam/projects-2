@@ -1,0 +1,12 @@
+.hero button{
+    color: white !important;
+}
+.livechat button{
+    color:white !important;
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        text-align: center;
+    }
+}

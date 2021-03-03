@@ -1,0 +1,136 @@
+.details .col-md span{
+    font-size: 12px !important;
+}
+.mobp{
+    display: none;
+}
+@media only screen and (max-width:1100px){
+    .thumb .p-3{
+        padding: 0 !important;
+    }
+    .images h4{
+        font-size: 20px !important;
+        margin: 0 !important;
+    }
+    .images h5{
+        font-size: 16px !important;
+    }
+    .images a{
+        font-size: 14px !important;
+    }
+    .images strike,span{
+        font-size: 20px !important;
+    }
+    .images button{
+        font-size: 10px !important;
+    }
+    .images p,span{
+        margin: 0 !important;
+    }
+    .images p span{
+        font-size: 14px !important;
+    }
+    
+}
+@media only screen and (max-width:992px){
+    .images strike, .price{
+        font-size:20px !important;
+    }
+    .images .price{
+        margin-top: 4px;
+    }
+    .review button{
+        font-size: 14px !important;
+    }
+    .mobp{
+        display: block;
+        padding: 10px 15px;
+        font-size: 14px !important;
+        text-align: justify;
+    }
+    .hidep{
+        display: none;
+    }
+}
+@media only screen and (max-width:905px){
+    .details .col-md span{
+        font-size: 10px !important;
+    }
+}
+@media only screen and (max-width:820px) and (min-width:768px){
+    .details .col-md span{
+        font-size: 8px !important;
+    }
+    .review button{
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width:770px){
+    .review button{
+        font-size: 9px !important;
+    }
+}
+@media only screen and (max-width:768px){
+    .images .col-1{
+        display: flex;
+        flex-direction: row !important;
+        height: 100% !important;
+    }
+    .images .col-1 .card{
+        /* height: 25px; */
+        /* width: 100PX !important; */
+      margin: 1rem !important;
+    }
+    .details .col-md span{
+        font-size: 10px !important;
+    }
+    .slick-dots{
+        position: absolute;
+        bottom: -20px !important;
+    }
+    .review button{
+        font-size: 14px !important;
+    }
+    .mobmargin{
+        margin-top: 20px !important;
+    }
+    .images h4{
+        font-size: 25px !important;
+        margin: 0 !important;
+        margin: 5px 0 !important;
+    }
+    .images h5{
+        font-size: 20px !important;
+    }
+    .images a{
+        font-size: 14px !important;
+    }
+    .images strike,span{
+        font-size: 20px !important;
+    }
+    .images button{
+        font-size: 16px !important;
+    }
+    .images p,span{
+        margin: 0 !important;
+    }
+    .images p span{
+        font-size: 16px !important;
+    }
+    .images .text-right{
+        text-align: left !important;
+    }
+    .images .col-md-6, .col-md-5{
+        margin-top:5px;
+    }
+}
+@media only screen and (max-width:675px){
+    .thumb{
+            display: flex;
+            flex: 0 0 50% !important;
+            max-width: 33.33% !important;
+            margin: 0 !important;
+            padding: 5px !important;
+            border: 1px solid white;
+    }
+}

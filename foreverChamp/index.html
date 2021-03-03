@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+            crossorigin="anonymous">
+
+        <!-- fontawesome css -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <!-- vgnav -->
+        <link href="vgnav/vgnav.css" rel="stylesheet" type="text/css">
+        <link href="vgnav/vgnav-theme.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="vgnav/default.min.css">
+        <link rel="stylesheet" href="vgnav/github.min.css">
+        <link href="vgnav/demo.css" rel="stylesheet" type="text/css">
+
+
+        <!-- progressbar css -->
+        <link rel="stylesheet" href="progressbar/jquery.lineProgressbar.css">
+        <!-- lity css -->
+        <link rel="stylesheet" href="lity/lity.css">
+
+        <!-- slick css -->
+        <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="slick/slick-theme.css">
+
+        <!-- style css -->
+        <link rel="stylesheet" href="style/style.css">
+
+
+        <!-- favicon -->
+        <link rel="shortcut icon"
+            href="img/flag.png">
+        <title>Forever Champ</title>
+    </head>
+    <body>
+        <!-- ===============topbar=============================== -->
+        <div class="black-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-12">
+                        <img src="img/flag.png" style="width: 25px;" alt="">
+                        <p class="d-inline font-14 font-weight-bold">
+                            <div class="dropdown d-inline">
+                                <button type="button" class="btn btn-link dropdown-toggle text-decoration-none text-white p-0 m-0 font-14" data-toggle="dropdown">
+                                  ENG
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">ENG</a>
+                                  <a class="dropdown-item" href="#">ENG</a>
+                                  <a class="dropdown-item" href="#">ENG</a>
+                                </div>
+                              </div>
+                            | 
+                            <div class="dropdown d-inline">
+                                <button type="button" class="btn btn-link dropdown-toggle text-decoration-none text-white p-0 m-0 font-14" data-toggle="dropdown">
+                                  USD
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">USD</a>
+                                  <a class="dropdown-item" href="#">USD</a>
+                                  <a class="dropdown-item" href="#">USD</a>
+                                </div>
+                              </div>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-8 m-auto mobhid">
+                        <p class="font-14 text-right">
+                            <a href="" class="text-white text-decoration-none">Login</a>/
+                            <a href="" class="text-white text-decoration-none">Signup</a>
+                            <span class="mx-3">|</span>
+                            <a href="" class="text-white text-decoration-none">
+                                <span class="fa fa-heart text-white"></span>
+                                <span>Wishlist(0)</span>
+                            </a>
+                            <span class="mx-3">|</span>
+                            <a href="" class="text-white text-decoration-none">
+                                Checkout
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===============topbar=============================== -->
+
+
+        <!-- ==========================logo bar=================================== -->
+        <section class="logoBar mobhid">
+            <div class="row">
+                <div class="col-lg-4 col-7 logoBg">
+                    <div class="container">
+                        <a href="index.html">
+                            <img src="img/FC - Logo FInal.png" class="logo"
+                            alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-4 m-auto mobhid">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control"
+                                        placeholder="Search for your product or brand">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-dark">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-4 m-auto mobhid">
+                    <p class="text-right mr-2">
+                        <a href="" class="d-inline text-dark
+                            text-decoration-none">Help</a>
+                        <span>|</span>
+                        <a href="" class="d-inline text-dark
+                            text-decoration-none">Contact Us</a>
+                        <span>|</span>
+                        <a href="" class="d-inline text-dark
+                            text-decoration-none">Register</a>
+                        <span>|</span>
+                        <a href="" class="d-inline text-dark
+                            text-decoration-none">Sign in</a>
+                        <a href="" class="d-inline text-dark
+                            text-decoration-none ml-2">
+                            <img src="img/cart.png" style="width: 30px; position: relative; top: -5px;" alt="">
+                        </a>
+
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================logo bar=================================== -->
+        <!-- ==========================================categroy section================================== -->
+        <section class="category">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="navigation">
+                            <a href="index.html" class="mob d-inline">
+                                <img src="img/FC - Logo FInal.png" class="logo"
+                                alt="">
+                            </a>
+                            <a href="" class="d-inline text-white mob
+                            text-decoration-none ml-2 basket">
+                            <img src="img/white-cart.png" style="width: 30px;position: relative;top: -5px;" alt="">
+                        </a>
+                            <nav class="vg-nav fixed-top">
+                                <ul class="vg-nav-main-container mr-3"
+                                    id="menu">
+                                    <li class="listItem mob">
+                                        <div class="row">
+                                            
+                                            <div class="col">
+                                                <form action="">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Search for your product or brand">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-dark">
+                                                                <i class="fa fa-search"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    <li class="listItem mob my-3">
+                                        <div class="bg-dark text-white py-3">
+                                           <span class="ml-4"> Menu</span>
+                                        </div>
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="" class="text-white
+                                            font-weight-normal d-inline">
+                                            <h5 class="text-uppercase">Soccer</h5>
+                                        </a>
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="about-us." class="text-white
+                                            font-weight-normal d-inline">
+                                            <h5 class="text-uppercase">Tennis</h5>
+                                        </a>
+
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="contact-us.html"
+                                            class="text-white font-weight-normal
+                                            d-inline">
+                                            <h5 class="text-uppercase">Volleyball</h5>
+                                        </a>
+
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="contact-us.html"
+                                            class="text-white font-weight-normal
+                                            d-inline">
+                                            <h5 class="text-uppercase">All items</h5>
+                                        </a>
+
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="contact-us.html"
+                                            class="text-white font-weight-normal
+                                            d-inline">
+                                            <h5 class="text-uppercase">About Us</h5>
+                                        </a>
+
+                                    </li>
+                                    <li class="listItem">
+                                        <a href="contact-us.html"
+                                            class="text-white font-weight-normal
+                                            d-inline">
+                                            <h5 class="text-uppercase">Contact
+                                                Us</h5>
+                                        </a>
+
+                                    </li>
+                                    <li class="listItem mob">
+                                        <a href="contact-us.html"
+                                            class="text-white font-weight-normal
+                                            d-inline">
+                                            <h5 class="text-uppercase">Help</h5>
+                                        </a>
+
+                                    </li>
+                                    <li class="listItem mob">
+                                        <a href="contact-us.html"
+                                            class="text-white font-weight-normal
+                                            d-inline">
+                                            <h5 class="text-uppercase">Wishlist</h5>
+                                        </a>
+
+                                    </li>
+                                    <li class="listItem mob">
+                                        <a href="contact-us.html"
+                                            class="text-white font-weight-normal
+                                            d-inline">
+                                            <h5 class="text-uppercase">Signup</h5>
+                                        </a>
+
+                                    </li>
+                                    <li class="listItem mob">
+                                        <a href="contact-us.html"
+                                            class="text-white font-weight-normal
+                                            d-inline">
+                                            <h5 class="text-uppercase">login</h5>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================categroy section================================== -->
+        <section class="sliderSection">
+            <div class="slider">
+                <div class="img1">
+                    <div class="text-center">
+                        <button class="btn btn-primary px-5 py-2 rounded-pill mb-4">Shop Now</button>
+                        <h1 class="text-white">
+                            FC MULTI USE NET
+                        </h1>
+                    </div>
+                </div>
+                <div class="img1">
+                    <div class="text-center">
+                        <button class="btn btn-primary px-5 py-2 rounded-pill mb-4">Shop Now</button>
+                        <h1 class="text-white">
+                            FC MULTI USE NET
+                        </h1>
+                    </div>
+                </div>
+                <div class="img1">
+                    <div class="text-center">
+                        <button class="btn btn-primary px-5 py-2 rounded-pill mb-4">Shop Now</button>
+                        <h1 class="text-white">
+                            FC MULTI USE NET
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================playing card================================= -->
+        <section class="playingCard">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md my-1 px-2">
+                        <div class="card">
+                            <img src="img/slider.jpg" class="card-img-top
+                                img-fluid" alt="">
+                            <div class="card-body bg-dark m-0 p-0">
+                                <div class="text-center">
+                                    <h1 class="text-white m-0 py-3">
+                                        SOCCER
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md my-1 px-2">
+                        <div class="card">
+                            <img src="img/slider.jpg" class="card-img-top
+                                img-fluid" alt="">
+                            <div class="card-body bg-dark m-0 p-0">
+                                <div class="text-center">
+                                    <h1 class="text-white m-0 py-3">
+                                        BADMINTON
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md my-1 px-2">
+                        <div class="card">
+                            <img src="img/slider.jpg" class="card-img-top
+                                img-fluid" alt="">
+                            <div class="card-body bg-dark m-0 p-0">
+                                <div class="text-center">
+                                    <h1 class="text-white m-0 py-3">
+                                        VOLLEYBALL
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================playing card================================= -->
+        <!-- ===============================new arrival section========================= -->
+        <section class="newArrival">
+            <div class="row m-0 p-0">
+                <h2 class="text-white bg-transparent new-header m-0 p-0">NEW ARRIVALS</h2>
+                <div class="col-3 m-0 p-0"></div>
+                <div class="col-9 m-0 p-0"></div>
+            </div>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-3 p-0 m-0">
+                        <div class="card px-2 py-3">
+                            <img src="img/slider.jpg" class="img-fluid" alt="">
+                            <div class="text-center mt-4">
+                                <h5>FC VOLLEYBALL NET</h5>
+                            </div>
+                            <div class="card-body bg-white m-0 p-0">
+                                <div class="text-center">
+                                    <h3>$26.98</h3>
+                                </div>
+                                <div class="row bg-transparent px-3">
+                                    <div class="col-1 m-0  mt-1 p-0">
+                                        <button class="btn m-0 p-0">
+                                            <img src="img/HRT.png" class="hrt" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="col-10">
+                                        <button class="btn btn-dark bg-dark btn-block">
+                                            <div class="row bg-transparent btnRow">
+                                                <div class="col-10 m-auto">
+                                                    <span class="addtocart">
+                                                        Add To Cart
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-1 m-0 p-0 mt-1 ">
+                                        <button class="btn m-0 p-0">
+                                            <img src="img/COPYSh.png" class="cpy" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-0 m-0">
+                        <div class="card px-2 py-3">
+                            <img src="img/slider.jpg" class="img-fluid" alt="">
+                            <div class="text-center mt-4">
+                                <h5>FC VOLLEYBALL NET</h5>
+                            </div>
+                            <div class="card-body bg-white m-0 p-0">
+                                <div class="text-center">
+                                    <h3>$26.98</h3>
+                                </div>
+                                <div class="row bg-transparent px-3">
+                                    <div class="col-1 m-0  mt-1 p-0">
+                                        <button class="btn m-0 p-0">
+                                            <img src="img/HRT.png" class="hrt" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="col-10">
+                                        <button class="btn btn-dark bg-dark btn-block">
+                                            <div class="row bg-transparent btnRow">
+                                                <div class="col-10 m-auto">
+                                                    <span class="addtocart">
+                                                        Add To Cart
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-1 m-0 p-0 mt-1 ">
+                                        <button class="btn m-0 p-0">
+                                            <img src="img/COPYSh.png" class="cpy" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-0 m-0">
+                        <div class="card px-2 py-3">
+                            <img src="img/slider.jpg" class="img-fluid" alt="">
+                            <div class="text-center mt-4">
+                                <h5>FC VOLLEYBALL NET</h5>
+                            </div>
+                            <div class="card-body bg-white m-0 p-0">
+                                <div class="text-center">
+                                    <h3>$26.98</h3>
+                                </div>
+                                <div class="row bg-transparent px-3">
+                                    <div class="col-1 m-0  mt-1 p-0">
+                                        <button class="btn m-0 p-0">
+                                            <img src="img/HRT.png" class="hrt" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="col-10">
+                                        <button class="btn btn-dark bg-dark btn-block">
+                                            <div class="row bg-transparent btnRow">
+                                                <div class="col-10 m-auto">
+                                                    <span class="addtocart">
+                                                        Add To Cart
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-1 m-0 p-0 mt-1 ">
+                                        <button class="btn m-0 p-0">
+                                            <img src="img/COPYSh.png" class="cpy" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-0 m-0">
+                        <div class="card px-2 py-3">
+                            <img src="img/slider.jpg" class="img-fluid" alt="">
+                            <div class="text-center mt-4">
+                                <h5>FC VOLLEYBALL NET</h5>
+                            </div>
+                            <div class="card-body bg-white m-0 p-0">
+                                <div class="text-center">
+                                    <h3>$26.98</h3>
+                                </div>
+                                <div class="row bg-transparent px-3">
+                                    <div class="col-1 m-0  mt-1 p-0">
+                                        <button class="btn m-0 p-0">
+                                            <img src="img/HRT.png" class="hrt" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="col-10">
+                                        <button class="btn btn-dark bg-dark btn-block">
+                                            <div class="row bg-transparent btnRow">
+                                                <div class="col-10 m-auto">
+                                                    <span class="addtocart">
+                                                        Add To Cart
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-1 m-0 p-0 mt-1 ">
+                                        <button class="btn m-0 p-0">
+                                            <img src="img/COPYSh.png" class="cpy" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===============================new arrival section========================= -->
+
+
+        <!-- ======================video section============================== -->
+        <section class="videoSection bg-dark p-0">
+            <video paused loop id="myVideo" poster="img/slider.jpg">
+                <source src="video/a.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            <div class="container">
+                <div class="content">
+                    <button id="myBtn" class="btn text-dark play" onclick="myFunction()">
+                        <img src="img/play.png" class="img-fluid" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- ======================video section============================== -->
+
+
+
+        <!-- ==========================advantage section================================= -->
+        <section class="advantage">
+            <div class="container-fluid px-3">
+                <div class="row">
+                    <div class="col-md-3 px-2">
+                        <div class="card bg-white py-3">
+                            <div class="text-center">
+                                <img src="img/familly-owned.png" class="card-img-top w-50" alt="">
+                                <h6 class="my-4">Familly owned & operated</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero laborum fugiat obcaecati odio soluta adipisci. Quod necessitatibus modi perferendis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-2">
+                        <div class="card bg-white py-3">
+                            <div class="text-center">
+                                <img src="img/shipping-truck-png-transparent-png-shipping-truck-png-shipping-truck-png-860_609.png" class="card-img-top w-75" alt="">
+                                <h6 class="my-4">Fast Shipping from USA</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero laborum fugiat obcaecati odio soluta adipisci. Quod necessitatibus modi perferendis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-2">
+                        <div class="card bg-white py-3">
+                            <div class="text-center">
+                                <img src="img/223-2238648_30-day-money-back-guarantee-png-png-download.png" class="card-img-top w-25" alt="">
+                                <h6 class="my-4">100% Satisfaction Guarantee</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero laborum fugiat obcaecati odio soluta adipisci. Quod necessitatibus modi perferendis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-2">
+                        <div class="card bg-white py-3">
+                            <div class="text-center">
+                                <img src="img/premium-quality-product.png" class="card-img-top w-50" alt="">
+                                <h6 class="my-4">Quality Products</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero laborum fugiat obcaecati odio soluta adipisci. Quod necessitatibus modi perferendis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================advantage section================================= -->
+
+        <!-- ==========================newsletter==================================== -->
+<section class="newsletter">
+    <div class="container">
+        <div class="row py-4 bg-dark px-5">
+            <div class="col-md-5 pl-4">
+                <h6 class="text-white">SIGN UP NEWSLETTER</h6>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cupiditate fugit blanditiis molestiae aliquid harum culpa in soluta mollitia dolor.</p>
+            </div>
+            <div class="col-md-7 m-auto">
+                <form action="" class="bg-transparent">
+                    <div class="input-group mob">
+                        <input type="text" class="form-control email-form" placeholder="Enter Your Email">
+                        <div class="input-group-append">
+                            <button class="btn bg-danger btn-block text-white">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row mobhid">
+                        <form action="" class="bg-danger">
+                            <div class="col-9 m-0 pr-0 bg-danger">
+                                <input type="text" class="form-control bg-dark border-0" placeholder="Enter Your Email">
+                            </div>
+                            <div class="col-3 m-0 pl-0">
+                                <button class="btn bg-danger btn-block text-white">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==========================newsletter==================================== -->
+
+<!-- footer -->
+<section class="footersection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md col-6 m-auto">
+                <img src="img/ae.png" class="w-50" alt="">
+            </div>
+            <div class="col-md col-6 m-auto">
+                <img src="img/mc.png" class="w-50" alt="">
+            </div>
+            <div class="col-md col-6 m-auto">
+                <img src="img/visa.png" class="w-50" alt="">
+            </div>
+            <div class="col-md col-6 m-auto">
+                <img src="img/gpay.png" class="w-50" alt="">
+            </div>
+            <div class="col-md col-6 m-auto">
+                <img src="img/ipay.png" class="w-50" alt="">
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col">
+                        <a href="">
+                            <img src="img/facebook_logos_PNG19753.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col m-auto">
+                        <div class="text-center">
+                            <a href="" class="text-center">
+                                <img src="img/580b57fcd9996e24bc43c521.png" class="w-75" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="img/580b57fcd9996e24bc43c53e.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-3 my-3">
+                <h6>COMPANY INFO</h6>
+                <ul class="mt-3 p-0 m-0">
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                           Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Videos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Brand Ambassadors
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            3PL & Fulfillment Services
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 my-3">
+                <h6>CUSTOMER INFO</h6>
+                <ul class="mt-3 p-0 m-0">
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Register/Sign in
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                           Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Help
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Payment Information
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Shipping and Returns
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Discount Codes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Who We Supply
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 my-3">
+                <h6>OTHER INFO</h6>
+                <ul class="mt-3 p-0 m-0">
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                           Purchase Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            T&Cs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Cookie Policy
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-3 my-3">
+                <h6>FIND YOUR SPORT</h6>
+                <ul class="mt-3 p-0 m-0">
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Soccer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                           Volleyball
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="text-white text-decoration-none">
+                            Tennis & Badminton
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+        <!-- ==================================javascript================================================ -->
+        <!-- javascripts -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="jquery/jquery.min.js"></script>
+        <script src="counterup/waypoints.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+            integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+            crossorigin="anonymous"></script>
+
+        <!-- vgnav -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/javascript.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/css.min.js"></script>
+        <script
+            src="vgnav/vgnav.min.js"></script>
+
+
+        <!-- counterup js -->
+        <!-- <script src="counterup/waypoints.min.js"></script> -->
+        <script src="counterup/jquery.rcounter.js"></script>
+
+
+        <!-- progressbar js -->
+        <script src="progressbar/jquery.lineProgressbar.js"></script>
+
+        <!-- lity js -->
+        <script src="lity/lity.js"></script>
+
+        <!-- slick js -->
+        <script src="slick/slick.min.js"></script>
+
+
+        <!-- one page nav -->
+        <script src="onePageNav/jquery.nav.js"></script>
+
+        <!-- custom js -->
+        <script src="custom js/script.js"></script>
+    </body>
+</html>

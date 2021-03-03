@@ -1,0 +1,8 @@
+.cards .card button{
+    color: white !important;
+}
+@media screen and (max-width:768px){
+    .cards .w-50{
+        width: 25% !important;
+    }
+}

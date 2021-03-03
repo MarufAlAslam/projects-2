@@ -1,0 +1,758 @@
+
+/* global colors */
+:root {
+    --hero:rgba(0,0,0,0.8);
+    --footer:#33334E;
+    --banner1: #ed4e19e3;
+    --banner2:#d7aa22d8;
+    --second: #F7F7F7;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --boxShadow: rgba(0,0,0,0.15);
+    --li:#FFF9EC;
+    --liText:#FDDF6D;
+    --ash:rgba(255,255,255,0.7);
+  }
+*{
+    font-family: 'Poppins', sans-serif;
+    box-shadow: unset !important;
+}
+
+body{
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
+}
+nav .container{
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    padding-top: 8px;
+}
+input, textarea,  button{
+    border-radius: 0 !important;
+}
+input, textarea{
+    border: 2px solid #424242;
+}
+button:focus{
+    outline: none !important;
+  box-shadow: none !important;
+}
+
+input:focus{
+    outline: none !important;
+  box-shadow: none !important;
+}
+
+textarea:focus{
+    outline: none !important;
+  box-shadow: none !important;
+}
+a:focus{
+    outline: none !important;
+  box-shadow: none !important;
+}
+select:focus{
+    outline: none !important;
+  box-shadow: none !important;
+}
+nav img{
+    width: 85px !important;
+}
+.thead-dark{
+    background-color: black !important;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-14{
+    font-size: 14px;
+}
+.bg-dark{
+    background-color: black !important;
+}
+.roboto{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+p{
+    margin: 0 !important;
+}
+.text-danger{
+    color: red !important;
+}
+.text-success{
+    color: #0cc984 !important;
+}
+.vg-nav .dropdown ul {
+    background: var(--white) !important;
+    box-shadow: 0 4px 7px var(--boxShadow);
+}
+
+.vg-nav > ul > li > a {
+    /* font-size: 13px !important; */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    display: block;
+    color: #232323;
+    text-decoration: none;
+}
+.header {
+    border-bottom: unset;
+}
+.vg-nav-hamburger {
+    position: absolute;
+    right: 15px;
+    top: -17px;
+}
+.vg-nav-hamburger span {
+    cursor: pointer;
+    border-radius: 2px;
+    height: 3px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    display: block;
+    transition: all 0.4s ease;
+    transform: rotate(0);
+    opacity: 1;
+}
+
+.left li a:hover .dropdown.dropdown ul li a{
+    background-color: var(--white) !important;
+    color: var(--dark) !important;
+}
+
+.left ul li li:hover a{
+    color: var(--liText) !important;
+}
+.container{
+    max-width: 85% !important;
+}
+.mobbtn{
+display: none !important;
+}
+/* nav ul li a{
+    margin: auto 20px;
+    font-size: 12px;
+} */
+.dropdown-item{
+    margin: 0 !important;
+}
+.dropdown-menu{
+   position: relative;
+}
+.triangle{
+    position: absolute;
+    background-color:var(--red);
+    top: 0;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    z-index: 1;
+}
+
+.dropdown-item{
+    padding: 10px !important;
+    border: 0;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+}
+
+.btn.btn-link.text-white.hidbtn.dropdown-toggle {
+    font-size: 13px;
+}
+.btn.btn-link.text-white.hidbtn {
+    font-size: 13px;
+}
+.header .btn.btn-danger {
+    font-size: 13px;
+}
+
+
+.bg-primary{
+    background-color: #0699CD !important;
+}
+.text-primary{
+    color: #0699CD !important;
+}
+.text-primary.text-decoration-none.logo {
+    font-size: 40px;
+    font-weight: 600;
+}
+.header .logo {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    text-align: left !important;
+}
+.vg-nav > ul > li {
+    padding: 0 10px;
+}
+/* .vg-nav-sidebar.right {
+    right: -75%;
+    width: 100%;
+} */
+.text-primary.text-decoration-none.font-weight-bold.find {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600 !important;
+}
+.header .text-white.text-uppercase.btn.btn-primary.bg-primary {
+    border: 3px solid white;
+    box-shadow: 0 1px 8px -1px gray !important;
+}
+.teacherCard1, .teacherCard2, .teacherCard3, .teacherCard4 {
+    box-shadow: unset;
+    padding: 0 !important;
+    cursor: pointer !important;
+}
+
+/* ================================================filter========================================= */
+.filter{
+    padding: 20px 30px;
+    background-color: white;
+    z-index: 5000 !important;
+}
+#mobFilterBtn{
+display: none;
+}
+.filterr{
+    padding: 20px 30px;
+    background-color: white;
+    z-index: 5000 !important;
+}
+/* .card{
+    z-index: 9990 !important;
+} */
+/* .vg-nav-sidebar{
+    display: none;
+} */
+.ytp-title-channel-logo {
+    display: none;
+}
+.ytp-title-link.yt-uix-sessionlink {
+    display: none;
+}
+.ytp-overflow-icon {
+    display: none;
+}
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 20px;
+    color: black;
+    transform: translate(0,-50%);
+}
+.dropdown2{
+    position: relative;
+}
+.availability {
+    position: absolute;
+    z-index: 1050;
+    background-color: white;
+    width: 800px !important;
+    top: 60px;
+    left: 0;
+    border-radius: 15px;
+    display: none;
+    /* transition: 0.5s; */
+}
+.availability .btn{
+    width: 100%;
+}
+.availability .btn:hover{
+    background-color: #E6F5FA;
+}
+.select2-dropdown.select2-dropdown--below {
+    z-index: 9999 !important;
+}
+.select2-search__field {
+    background-image: url(../img/search.png) !important;
+    background-color: transparent;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: 'search';
+    padding-left: 30px;
+    place-content: search;
+}
+.availability .btn {
+    border: unset !important;
+}
+.select2-dropdown.select2-dropdown--below {
+    width: 156px;
+    top: 5px;
+    border: unset;
+}
+.select2-selection.select2-selection--single {
+    border-radius: 25px !important;
+}
+.availbtn:hover{
+    color: #55C3E7;
+}
+/* ================================================filter========================================= */
+
+/* =========================================teachers============================================ */
+.teachers{
+    padding: 50px 0;
+}
+.sideCard1, .sideCard2, .sideCard3, .sideCard4{
+    display: none;
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    box-shadow: 1px 1px 12px 1px gray;
+    z-index: 1010;
+}
+.rate{
+    font-size: 13px;
+    font-weight: 600;
+}
+.btn.disabled.btn-light.text-left {
+    width: 110px;
+}
+.btn.btn-primary.bg-primary.w-25.border-0.rounded {
+    position: absolute;
+    right: 30px;
+}
+
+/* =========================================teachers============================================ */
+
+/* ======================================footer================================================= */
+.footer{
+    background-color: #E7F1FF;
+    padding:50px 0;
+}
+/* ======================================footer================================================= */
+
+
+
+
+/* ==========================================teacher-profile=================================== */
+.teacher-profile {
+    border-radius: 20px 20px 0 0;
+}
+.ytp-title-channel {
+    display: none !important;
+}
+.ytp-title {
+    display: none !important;
+}
+.ytp-chrome-top-buttons {
+    display: none !important;
+}
+.ytp-impression-link {
+    display: none;
+}
+.teacher-profile-img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.teachers .card {
+    box-shadow: unset;
+}
+
+.popup {
+    /* display: none; */
+    background-color: rgba(0,0,0,0.5);
+    width: 100vw !important;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1050 !important;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-popup.m-auto.bg-white {
+    width: 70%;
+    padding: 15px !important;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.teacher-profile-pic {
+    width: 150px !important;
+    height: 155px !important;
+    border: 2px solid white;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.myc-date-number {
+    font-weight: lighter;
+    display: inline !important;
+    font-size: 14px;
+}
+.myc-date-display {
+    font-weight: lighter;
+    display: inline;
+    margin-left: 5px;
+}
+
+.myc-available-time {
+    border-radius: unset;
+    margin: 2px;
+    background: lightgray;
+    color: black;
+    padding: 5px 15px;
+    width: 100%;
+    text-decoration: none !important;
+}
+.myc-available-time:hover{
+    background-color: white;
+}
+.myc-day-time-container {
+    padding: 2px !important;
+}
+.myc-available-time.selected, .myc-available-time:hover {
+    background-color: #3DC2DE;
+}
+#myc-current-month-year-container {
+    display: none;
+}
+#myc-nav-container {
+    margin: 0;
+}
+#myc-prev-week {
+    position: absolute;
+    left: 20%;
+    top: 110px;
+}
+#myc-next-week {
+    position: absolute;
+    right: 20%;
+    top: 110px;
+}
+.popup .text-center {
+    padding-top: 30px;
+}
+#myc-next-week:hover{
+    border: unset;
+    color: black;
+    opacity: 1;
+}
+
+#myc-prev-week:hover{
+    border: unset;
+    color: black;
+    opacity: 1;
+}
+.popup .myc-date-header {
+    border-right: 1px solid #e0e0e0;
+    display: inline-block;
+    min-height: 50px;
+    padding: 15px 0px 15px 15px;
+        padding-left: 15px;
+    vertical-align: top;
+    width: 18% !important;
+}
+.popup .myc-day-time-container {
+    border-right: 1px solid #e0e0e0;
+    display: inline-block;
+    height: 100%;
+    padding: 15px 15px 15px 15px;
+    vertical-align: top;
+    width: 19% !important;
+}
+/* ============================login====================================== */
+form .btn.btn-primary.rounded.py-3.px-5 {
+    font-size: 20px;
+    padding: 8px 40px !important;
+}
+.font-12{
+    font-size: 12px;
+}
+.lity-iframe .lity-container, .lity-youtube .lity-container, .lity-vimeo .lity-container, .lity-facebookvideo .lity-container, .lity-googlemaps .lity-container {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px !important;
+}
+.lity-close {
+    position: absolute;
+    color: black !important;
+    box-shadow: unset;
+    width: 50px;
+    height: 50px;
+    font-size: 35px !important;
+}
+.lity {
+    z-index: 9990;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    white-space: nowrap;
+    background: #0b0b0b;
+    background: rgba(0, 0, 0, 0.4);
+    outline: none !important;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+.lity-iframe-container {
+    border-radius: 20px !important;
+    overflow:  hidden !important;
+}
+.lity-content::after {
+    content: unset;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+/* =====================================================dashboardtabs======================================= */
+.dashboardtabs{
+    padding-top: 20px;
+    padding-bottom:5px ;
+    background-color: #FAFAFA;
+}
+.dashboardtabs a.active{
+    border-bottom: 5px solid #3DC2DE;
+}
+.dashboard .user-profile{
+    background-color: #E7F1FF;
+    padding: 20px 0;
+}
+.dashboard .user-activity{
+    background-color: #FAFAFA;
+    padding: 30px 0;
+}
+.dashboard .card{
+    box-shadow: 1px 1px 12px 1px gray;
+}
+.dashboard .btn.btn-outline-dark.bg-white.text-dark.px-4.mr-3.dropdown-toggle {
+    border: unset;
+    padding: 10px 30px !important;
+    box-shadow: 1px 1px 12px 1px gray;
+    margin-top: 10px;
+}
+span.text-white.bg-primary.p-2.rounded-circle {
+    padding: 5px 10px !important;
+    margin-right: 5px;
+}
+.user-dropdown{
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    display: none;
+    width: 170px !important;
+}
+
+
+
+/* ============settings=================== */
+.settings{
+    padding: 50px 0;
+}
+.settings .card{
+    box-shadow: 1px 1px 12px 1px gray;
+}
+.settings .leftSettingsCard{
+    border-radius: 30px;
+}
+.settings a.active{
+    border-left: 5px solid #3DC2DE;
+}
+.settings .form-control.my-3 {
+    height: 40px;
+    border-radius: 6px !important;
+}
+
+.passwordField, .profileField{
+    display: none;
+}
+/* =====================================================dashboardtabs======================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .text-primary.text-decoration-none.font-weight-bold.find {
+        position: unset;
+    }
+    /* .vg-nav-sidebar{
+        display: block;
+    } */
+    .teachers .col-md-4 {
+        display: none;
+    }
+    .teachers .col-md-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 100%;
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    #mobFilterBtn{
+        display: block;
+    }
+    .dropdown1,.dropdown2,.dropdown3,.dropdown4,.dropdown5{
+        display: block !important;
+        margin: 10px 0;
+    }
+    .availability{
+        position: unset;
+        border: 1px solid black;
+        margin: 10px 0;
+    }
+    .availability .row{
+        border: unset !important;
+        max-width: 85%;
+        margin: auto;
+    }
+    .availability.p-2 {
+        width: 100% !important;
+    }
+    .availability .col{
+        padding: 0;
+        margin: 0;
+    }
+    .availability h6,.availability button {
+        font-size: 12px !important;
+    }
+    .filter .container-fluid {
+        padding-left: 0 !important;
+    }
+    .filter {
+        height: 100vh !important;
+        width: 100vw !important;
+        display: none;
+        text-align: center;
+    }
+    .filter1 {
+        height: 100vh !important;
+        width: 100vw !important;
+        display: none;
+        text-align: center;
+    }
+    .select2.select2-container.select2-container--default {
+    width: 100% !important;
+}
+.availbtn.btn.btn-outline-dark.bg-white.text-dark.px-4.rounded-pill.mr-3 {
+    width: 100%;
+    text-align: left;
+}
+.btn.btn-outline-dark.bg-white.text-dark.px-4.rounded-pill.mr-3.dropdown-toggle {
+    width: 100%;
+    text-align: left;
+}
+#mobFilterBtn {
+    border: unset;
+}
+.btn.btn-primary.bg-primary.w-25.border-0.rounded {
+    position: unset;
+    right: 30px;
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+.main-popup.m-auto.bg-white {
+    width: 100%;
+    padding: 15px !important;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.teacher-profile-pic {
+    width: 100px !important;
+    height: 100px !important;
+    border: 2px solid white;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.teacher-profile-img {
+    border-radius: 50%;
+    height: auto;
+    width: 150px;
+}
+
+}
+@media screen and (max-width:576px){
+    
+    .card.p-3 {
+        padding-bottom: 70px !important;
+    }
+    .attributes .btn {
+        width: 29% !important;
+        font-size: 12px;
+    }
+    .dashboard {
+        text-align: center;
+    }
+    .dashboard .text-right {
+        text-align: center !important;
+    }
+}

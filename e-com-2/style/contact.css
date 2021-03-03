@@ -1,0 +1,6 @@
+@media only screen and (max-width:768px){
+    .usefull .col-md-4 {
+        text-align: center !important;
+        margin: 15px 0 !important;
+    }
+}

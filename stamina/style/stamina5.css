@@ -1,0 +1,53 @@
+.cards .card button{
+    color: white !important;
+}
+@media screen and (max-width:1230px){
+    .cards .myp .ml-5 {
+        margin-left: 30px !important;
+    }
+}
+@media screen and (max-width:1200px){
+    .cards .myp .ml-5 {
+        margin-left: 20px !important;
+    }
+}
+@media screen and (max-width:1130px){
+    .cards .myp .ml-5 {
+        margin-left: 10px !important;
+    }
+}
+@media screen and (max-width:1100px){
+    .cards .myp button {
+        margin-left: 50px !important;
+    }
+}
+@media screen and (max-width:992px){
+    .cards .myp .ml-5 {
+        margin-left: 70px !important;
+    }
+    .cards .myp button {
+        margin-left: 20px !important;
+    }
+}
+@media screen and (max-width:768px){
+    .cards .w-50{
+        width: 25% !important;
+    }
+    .cards .myp .ml-5 {
+        margin-left: 40px !important;
+    }
+    .cards .myp button {
+        margin-left: 10px !important;
+    }
+}
+@media screen and (max-width:690px){
+    .cards .myp .ml-5 {
+        margin-left: 20px !important;
+    }
+    .cards .myp button {
+        margin-left: 5px !important;
+    }
+    .cards .myp {
+        font-size: 10px !important;
+    }
+}

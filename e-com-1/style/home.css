@@ -1,0 +1,101 @@
+@media only screen and (max-width:1100px){
+    .newArrivalCard1 p {
+        font-size: 14px;
+    }
+    .newArrivalCard1 strike {
+        font-size: 14px;
+    }
+    .newArrivalCard1 button {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:992px){
+    .hero-title{
+        left: 155px;
+        top: 20%;
+       
+    }
+    .font-85{
+        font-size: 50px !important;
+    }
+}
+@media only screen and (max-width:768px){
+    
+    .newImg{
+        display: none;
+    }
+    .newArrivalCard1 .card-body{
+        padding: 20px;
+    }
+    .font-14{
+        top: -92px;
+        margin-top: 10px;
+    }
+    .hero-title{
+        left: 125px;
+        top: 20%;
+    }
+    .font-85{
+        font-size: 40px !important;
+    }
+    .newArrivalCard1 h6{
+        font-size: 20px;
+    }
+    .newArrivalCard1 p {
+        font-size: 16px;
+    }
+    .newArrivalCard1 strike {
+        font-size: 16px;
+    }
+    .newArrivalCard1 button {
+        font-size: 16px;
+    }
+    .feature .slick-dots{
+        bottom: -20px !important;
+    }
+    .center{
+        text-align: center;
+    }
+    .shopbtn{
+        position: unset;
+    }
+    
+}
+@media only screen and (max-width:576px){
+    body,html{
+        overflow-x: hidden !important;
+    }
+    .hero-title{
+        left: 60px;
+        top: 20%;
+    }
+    .font-85{
+        font-size: 30px !important;
+    }
+    .hero-title button{
+        margin: 0px !important;
+        padding: 10px 20px !important;
+    }
+    .Slides .slick-dots{
+        bottom: -25px !important;
+    }
+    .slider1_next_arrow{
+        position: absolute;
+        background-color: var(--warning);
+        z-index: 1;
+        top: 35%;
+        right: 4%;
+    }
+    
+    .slider1_prev_arrow{
+        position: absolute;
+        background-color: var(--warning);
+        z-index: 1;
+        top: 35%;
+        left: 4%;
+    }
+
+    .slider1_next_arrow, .slider1_prev_arrow{
+        display:none;
+    }
+}
