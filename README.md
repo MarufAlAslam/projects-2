@@ -10,19 +10,19 @@
 Live Links: 
 ----------------
 
-1. https://marufalaslam.github.io/fivProjects/activos/ <br>
-2. https://marufalaslam.github.io/fivProjects/affordable-meds/ <br>
-3. https://marufalaslam.github.io/fivProjects/e-com-1/ <br>
-4. https://marufalaslam.github.io/fivProjects/e-com-2/ <br>
-5. https://marufalaslam.github.io/fivProjects/e-vom-3/ <br>
-6. https://marufalaslam.github.io/fivProjects/find-teacher/ <br>
-7. https://marufalaslam.github.io/fivProjects/forecaster-games/ <br>
-8. https://marufalaslam.github.io/fivProjects/foreverChamp <br>
-9. https://marufalaslam.github.io/fivProjects/gocrd/ <br>
-10. https://marufalaslam.github.io/fivProjects/highVibeMushroom/ <br>
-11. https://marufalaslam.github.io/fivProjects/liamNeilPortfolio/ <br>
-12. https://marufalaslam.github.io/fivProjects/metin-2/ <br>
-13. https://marufalaslam.github.io/fivProjects/modern/ <br>
-14. https://marufalaslam.github.io/fivProjects/softswuit/ <br>
-15. https://marufalaslam.github.io/fivProjects/stamina/ <br>
-16. https://marufalaslam.github.io/fivProjects/swiftway-movers/
+1. https://marufalaslam.github.io/projects-2/activos/ <br>
+2. https://marufalaslam.github.io/projects-2/affordable-meds/ <br>
+3. https://marufalaslam.github.io/projects-2/e-com-1/ <br>
+4. https://marufalaslam.github.io/projects-2/e-com-2/ <br>
+5. https://marufalaslam.github.io/projects-2/e-vom-3/ <br>
+6. https://marufalaslam.github.io/projects-2/find-teacher/ <br>
+7. https://marufalaslam.github.io/projects-2/forecaster-games/ <br>
+8. https://marufalaslam.github.io/projects-2/foreverChamp <br>
+9. https://marufalaslam.github.io/projects-2/gocrd/ <br>
+10. https://marufalaslam.github.io/projects-2/highVibeMushroom/ <br>
+11. https://marufalaslam.github.io/projects-2/liamNeilPortfolio/ <br>
+12. https://marufalaslam.github.io/projects-2/metin-2/ <br>
+13. https://marufalaslam.github.io/projects-2/modern/ <br>
+14. https://marufalaslam.github.io/projects-2/softswuit/ <br>
+15. https://marufalaslam.github.io/projects-2/stamina/ <br>
+16. https://marufalaslam.github.io/projects-2/swiftway-movers/
